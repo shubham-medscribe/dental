@@ -144,7 +144,7 @@ export default function DentalpriceDown() {
                   <div key={index} className=" flex gap-3">
                     <div>
                       <FontAwesomeIcon
-                        className="text-[#C11C3B]"
+                        className="text-[#153371]"
                         icon={faCheckCircle}
                       />
                     </div>
@@ -162,7 +162,7 @@ export default function DentalpriceDown() {
                   <div key={index} className=" flex gap-3">
                     <div>
                       <FontAwesomeIcon
-                        className="text-[#C11C3B]"
+                        className="text-[#153371]"
                         icon={faCheckCircle}
                       />
                     </div>

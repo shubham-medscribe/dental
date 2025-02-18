@@ -10,7 +10,6 @@ export default function Contact() {
     email: "",
     phone: "",
     financing: "",
-    treatment: "",
     note: "",
     consent: false,
   });
@@ -43,77 +42,113 @@ export default function Contact() {
             </h2>
 
             <div className="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label
+                  htmlFor="firstName"
+                  className="block text-sm font-semibold mb-1"
+                >
+                  First
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="First"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  className="border p-2 rounded-lg w-full"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="lastName"
+                  className="block text-sm font-semibold mb-1"
+                >
+                  Last
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  className="border p-2 rounded-lg w-full"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="email"
+                className="block text-sm font-semibold mb-1"
+              >
+                Email
+              </label>
               <input
-                type="text"
-                name="firstName"
-                placeholder="First"
-                value={formData.firstName}
-                onChange={handleChange}
-                className="border p-2 rounded-lg w-full"
-                required
-              />
-              <input
-                type="text"
-                name="lastName"
-                placeholder="Last"
-                value={formData.lastName}
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
                 onChange={handleChange}
                 className="border p-2 rounded-lg w-full"
                 required
               />
             </div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              className="border p-2 rounded-lg w-full mb-4"
-              required
-            />
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-semibold mb-1"
+              >
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                className="border p-2 rounded-lg w-full"
+                required
+              />
+            </div>
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              value={formData.phone}
-              onChange={handleChange}
-              className="border p-2 rounded-lg w-full mb-4"
-              required
-            />
+            <div className="mb-4">
+              <label
+                htmlFor="financing"
+                className="block text-sm font-semibold mb-1"
+              >
+                Financing
+              </label>
+              <select
+                name="financing"
+                value={formData.financing}
+                onChange={handleChange}
+                className="border p-2 rounded-lg w-full"
+                required
+              >
+                <option value="">Please choose an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
 
-            <select
-              name="financing"
-              value={formData.financing}
-              onChange={handleChange}
-              className="border p-2 rounded-lg w-full mb-4"
-              required
-            >
-              <option value="">Please choose an option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-
-            <select
-              name="treatment"
-              value={formData.treatment}
-              onChange={handleChange}
-              className="border p-2 rounded-lg w-full mb-4"
-              required
-            >
-              <option value="">Please choose an option</option>
-              <option value="treatment1">Treatment 1</option>
-              <option value="treatment2">Treatment 2</option>
-            </select>
-
-            <textarea
-              name="note"
-              placeholder="Note for doctor"
-              value={formData.note}
-              onChange={handleChange}
-              className="border p-2 rounded-lg w-full mb-4"
-            ></textarea>
+            <div className="mb-4">
+              <label
+                htmlFor="note"
+                className="block text-sm font-semibold mb-1"
+              >
+                Note for doctor
+              </label>
+              <textarea
+                name="note"
+                placeholder="Note for doctor"
+                value={formData.note}
+                onChange={handleChange}
+                className="border p-2 rounded-lg w-full"
+              ></textarea>
+            </div>
 
             <div className="flex items-center mb-4">
               <input

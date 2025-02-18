@@ -1,12 +1,13 @@
 import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
+import theme from "../constant/Constant";
 
 export default function BookAvailable() {
   const [ispecial, setIspecial] = React.useState(false);
   const [isBooked, setBooked] = React.useState(true);
   const navigateToContact = useNavigateToContact();
   return (
-    <div className="w-full bg-[#C11C3B] flex justify-center px-5 py-36 relative">
+    <div style={{backgroundColor:theme}} className="w-full  flex justify-center px-5 py-36 relative">
       <div className="flex flex-col lg:flex-row justify-center max-w-7xl gap-10 p-5">
         <div className="text-white min-w-80">
           <div className="flex flex-col lg:flex-row">

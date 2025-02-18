@@ -32,7 +32,7 @@ export default function SaveOffer() {
 
   const formatTime = (num: number) => num.toString().padStart(2, "0");
   return (
-    <div className="w-full flex justify-center bg-[#C11C3B] lg:py-16 ">
+    <div className="w-full flex justify-center bg-[#153371] lg:py-16 ">
       <div className="flex flex-col lg:flex-row max-w-screen-xl items-center justify-center w-full ">
         <div className="w-full flex flex-col items-center lg:items-start justify-center p-5 gap-3 ">
           <div className="w-full flex max-w-sm text-center lg:text-left bg-black bg-opacity-70 text-white space-x-3 py-1 px-5  rounded-lg font-semibold">
@@ -84,20 +84,20 @@ function Card() {
           <h2 className="font-bold lg:text-3xl">Dental Implants</h2>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <span className="text-[#C11C3B] font-bold lg:text-3xl">$2,495</span>
+          <span className="text-[#153371] font-bold lg:text-3xl">$2,495</span>
           <span>(all-in)</span>
         </div>
 
         <div className="w-full flex gap-2 items-center justify-center">
           <div className="h-[1px] bg-black w-10"></div>
-          <span className="text-[#C11C3B] font-bold text-center text-base w-fit lg:text-xl ">
+          <span className="text-[#153371] font-bold text-center text-base w-fit lg:text-xl ">
             Affordable Financing
           </span>
           <div className="h-[1px] bg-black w-10"></div>
         </div>
 
         <div className="w-full flex gap-3 items-center py-1 justify-center">
-          <div className="text-[#C11C3B] font-bold text-sm">
+          <div className="text-[#153371] font-bold text-sm">
             1 Implant + Crown 73$/month
           </div>
         </div>
@@ -114,7 +114,7 @@ function Card() {
 
         <div className="flex flex-col lg:flex-row lg:gap-3 justify-center lg:text-base items-center py-1">
           <div className="flex gap-3 ">
-            <div className="text-[#C11C3B]">
+            <div className="text-[#153371]">
               <FontAwesomeIcon icon={faCheckCircle} />
             </div>
             <div>
@@ -123,7 +123,7 @@ function Card() {
           </div>
 
           <div className="flex gap-3">
-            <div className="text-[#C11C3B]">
+            <div className="text-[#153371]">
               <FontAwesomeIcon icon={faCheckCircle} />
             </div>
             <div>

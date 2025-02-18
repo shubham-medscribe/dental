@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
           <div className="w-full flex gap-4">
             <div className="w-10 h-10 flex justify-center items-center  rounded-full bg-[#0866FF] mt-5">
-              <a href="https://www.facebook.com">
+              <a href="https://www.facebook.com/CenterForImplantDentistryBayarea/">
                 <svg
                   width="24"
                   height="24"
@@ -92,7 +92,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="w-10 h-10 flex justify-center items-center  rounded-full bg-[#F00075] mt-5">
-              <a href="https://instagram.com" target="_blank">
+              <a href="https://www.instagram.com/centerforimplantdentistryca/" target="_blank">
                 <svg
                   fill="#fff"
                   width="24"
@@ -108,7 +108,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="w-10 h-10 flex justify-center items-center  rounded-full bg-[#FF0000] mt-5">
-              <a href="https://www.youtube.com"  target="_blank">
+              <a href="https://www.youtube.com/channel/UC93-7FPcQxlRd1tXYwu2oLQ"  target="_blank">
 
                 <svg
                   fill="#fff"
@@ -125,7 +125,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="w-10 h-10 flex justify-center items-center  rounded-full bg-[#EA4434] mt-5">
-              <a href="https://www.youtube.com" target="_blank">
+              <a href="https://www.google.com/maps/place/Center+for+Implant+Dentistry/@37.7811905,-122.4679532,17z/data=!4m5!3m4!1s0x0:0x8e38dba460111f1c!8m2!3d37.7811681!4d-122.465763?authuser=2" target="_blank">
                 <svg
                   fill="#fff"
                   width="24"
@@ -141,7 +141,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="w-10 h-10 flex justify-center items-center  rounded-full bg-[#D32422] mt-5">
-              <a href="google.com" target="_blank">
+              <a href="https://www.yelp.com/biz/center-for-implant-dentistry-san-francisco" target="_blank">
                 <svg
                   fill="#fff"
                   width="24"
