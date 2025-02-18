@@ -43,7 +43,7 @@ export default function FAQ() {
     {
       question: "Call us Now",
       answer:
-        "Contact us at (123) 456-7890 for more information or to book an appointment.",
+        "Contact us at (510) 574-0496 for more information or to book an appointment.",
     },
   ];
 
