@@ -25,7 +25,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
           <div className="">
             <h1 className="uppercase text-3xl  font-extrabold my-4 text-center lg:text-left italic">
               {" "}
-              Denatl implant  <br className="md:block hidden"/> price break down
+              Dental implant  <br className="md:block hidden"/> price break down
             </h1>
             <div className=" flex justify-center lg:justify-start">
               <button
