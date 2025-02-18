@@ -33,9 +33,9 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
 
   const formatTime = (num: number) => num.toString().padStart(2, "0");
   return (
-    <div className="w-full flex justify-center bg-[#153371] lg:py-16 ">
+    <div className="w-full h-fit flex justify-center bg-[#153371] py-3 lg:py-16 ">
       <div className="flex flex-col md:flex-row max-w-screen-xl items-center justify-center w-full ">
-        <div className="flex-1 flex flex-col items-center md:items-start justify-center p-5 gap-3 md:gap-8 ">
+        <div className="flex-1 flex flex-col items-center md:items-start justify-center px-5 py-5 gap-5 md:gap-6">
           <div className="bg-gradient-to-r from-[#D31717] to-[#FE4141] rounded-xl w-fit flex max-w-sm text-center items-center lg:text-left bg-opacity-70 text-white space-x-3 py-2 md:py-1 px-5   font-bold lg:font-normal">
             <figure>
               <img
@@ -44,23 +44,23 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
                 alt=""
               />
             </figure>
-            <span className="uppercase text-[16px] lg:text-2xl italic md:not-italic">Save the Offer !</span>
-            <span className="text-lg font-semibold md:font-normal md:text-2xl">{`${formatTime(
+            <span className="uppercase text-[13px] sm:text-xl italic md:not-italic">Save the Offer !</span>
+            <span className="text-lg text-[13px] sm:text-lg font-semibold md:font-normal md:text-xl">{`${formatTime(
               hours
             )}:${formatTime(minutes)}:${formatTime(seconds)}`}</span>
           </div>
 
-          <div className="w-full   text-center md:text-left sm:space-y-3 md:space-y-5 text-white px-8 sm:px-3 ">
-            <h1 className="text-lg sm:text-2xl md:text-3xl  font-bold">
+          <div className="w-full   text-center md:text-left sm:space-y-3 md:space-y-5 text-white px-3 md:px-0">
+            <h1 className="text-lg sm:text-2xl md:text-4xl  font-bold">
               Smile Confidently with Dental Implants
             </h1>
-            <h2 className="text-base md:text-[26px] md:leading-8">
+            <h2 className="text-base md:text-[28px] md:leading-8">
               Stable, natural-looking dental implants for a confident smile
             </h2>
           </div>
         </div>
-        <div className="flex-1 w-full flex flex-col items-center px-5 gap-5 justify-center py-16">
-          <MainCard openPopForm={openPopForm} />
+        <div className="flex-1 w-full flex flex-col items-center px-5 gap-5 justify-center py-16 md:py-24">
+         <div className="flex justify-center w-full"> <MainCard openPopForm={openPopForm} /></div>
           <div className=" px-4 py-1 w-fit bg-[#224D5C] rounded-3xl flex items-center justify-center gap-3">
             <FontAwesomeIcon className="text-green-500" icon={faCheckCircle} />
             <h2 className="text-white text-base font-bold">99% Approved</h2>

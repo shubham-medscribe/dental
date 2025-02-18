@@ -36,14 +36,14 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
       className="w-full h-screen bg-black/40 fixed top-0 left-0 flex justify-center items-center z-50"
     >
       <motion.div
-        className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg relative"
+        className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg relative "
         initial={{ opacity: 0, scale: 0.75 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.75 }}
         transition={{ duration: 0.3 }}
         onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the form
       >
-        <button onClick={()=>{closePopForm()}} className="absolute top-0 right-0 p-5">
+        <button onClick={()=>{closePopForm()}} className="absolute top-0 right-0 p-2 sm:p-5">
           <FontAwesomeIcon icon={faClose}/>
         </button>
         <h2 className="text-xl font-bold mb-4 text-center">
