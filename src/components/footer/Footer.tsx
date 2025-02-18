@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
           <div className="w-full flex gap-4">
             <div className="w-10 h-10 flex justify-center items-center  rounded-full bg-[#0866FF] mt-5">
-              <a href="www.facebook.com">
+              <a href="https://www.facebook.com">
                 <svg
                   width="24"
                   height="24"
