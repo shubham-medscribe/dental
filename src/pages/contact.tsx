@@ -47,7 +47,7 @@ export default function Contact() {
                   htmlFor="firstName"
                   className="block text-sm font-semibold mb-1"
                 >
-                  First
+                  First <span className="text-red-700">*</span>
                 </label>
                 <input
                   type="text"
@@ -64,7 +64,7 @@ export default function Contact() {
                   htmlFor="lastName"
                   className="block text-sm font-semibold mb-1"
                 >
-                  Last
+                  Last <span className="text-red-700">*</span>
                 </label>
                 <input
                   type="text"
@@ -83,7 +83,7 @@ export default function Contact() {
                 htmlFor="email"
                 className="block text-sm font-semibold mb-1"
               >
-                Email
+                Email <span className="text-red-700">*</span>
               </label>
               <input
                 type="email"
@@ -101,7 +101,7 @@ export default function Contact() {
                 htmlFor="phone"
                 className="block text-sm font-semibold mb-1"
               >
-                Phone Number
+                Phone Number <span className="text-red-700">*</span>
               </label>
               <input
                 type="tel"
@@ -119,7 +119,7 @@ export default function Contact() {
                 htmlFor="financing"
                 className="block text-sm font-semibold mb-1"
               >
-                Financing
+                Financing <span className="text-red-700">*</span>
               </label>
               <select
                 name="financing"
