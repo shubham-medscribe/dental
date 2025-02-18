@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { createPortal } from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 
-export default function PopFor({ openPopForm }: Record<string, any>) {
+export default function PopFor({ closePopForm }: Record<string, any>) {
   const [message, setMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -30,7 +32,7 @@ export default function PopFor({ openPopForm }: Record<string, any>) {
 
   return createPortal(
     <div
-      onClick={openPopForm} // Clicking outside closes the popup
+      onClick={closePopForm} // Clicking outside closes the popup
       className="w-full h-screen bg-black/40 fixed top-0 left-0 flex justify-center items-center z-50"
     >
       <motion.div
@@ -41,6 +43,9 @@ export default function PopFor({ openPopForm }: Record<string, any>) {
         transition={{ duration: 0.3 }}
         onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the form
       >
+        <button onClick={()=>{closePopForm()}} className="absolute top-0 right-0 p-5">
+          <FontAwesomeIcon icon={faClose}/>
+        </button>
         <h2 className="text-xl font-bold mb-4 text-center">
           📅 BOOK A FREE CONSULTATION
         </h2>
