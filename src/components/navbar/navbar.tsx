@@ -24,7 +24,7 @@ export default function Navbar({openPopForm }:Record<string,any>) {
             type="button"
             className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium lg:text-xl lg:px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 text-base px-2"
           >
-            Free Consultant
+            Free Consultation
           </button>
         </div>
       </div>

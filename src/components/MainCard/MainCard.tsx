@@ -39,7 +39,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
             type="button"
             className="w-[15em] focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-base px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
           >
-            Free Consultant
+            Free Consultation
           </button>
         </div>
 

@@ -22,17 +22,20 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
     <div className="w-full flex flex-col justify-center items-center bg-[#F9FAFF] py-10">
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
         <div className="flex flex-col items-center justify-center w-full">
-          <h1 className="uppercase text-xl font-extrabold my-4 text-center lg:text-left italic">
-            Denatl implant price break down
-          </h1>
-          <div className="w-full flex justify-center lg:justify-start">
-            <button
-              onClick={() => openPopForm(true)}
-              type="button"
-              className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
-            >
-              Free consulation
-            </button>
+          <div className="">
+            <h1 className="uppercase text-3xl  font-extrabold my-4 text-center lg:text-left italic">
+              {" "}
+              Denatl implant  <br className="md:block hidden"/> price break down
+            </h1>
+            <div className=" flex justify-center lg:justify-start">
+              <button
+                onClick={() => openPopForm(true)}
+                type="button"
+                className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+              >
+                Free Consultation
+              </button>
+            </div>
           </div>
         </div>
 

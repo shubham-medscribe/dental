@@ -2,12 +2,15 @@ import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
 import theme from "../constant/Constant";
 
-export default function BookAvailable({ openPopForm }:Record<string,any>) {
+export default function BookAvailable({ openPopForm }: Record<string, any>) {
   const [ispecial, setIspecial] = React.useState(false);
   const [isBooked, setBooked] = React.useState(true);
   const navigateToContact = useNavigateToContact();
   return (
-    <div style={{backgroundColor:theme}} className="w-full  flex justify-center px-5 py-36 relative">
+    <div
+      style={{ backgroundColor: theme }}
+      className="w-full  flex justify-center px-5 py-36 relative"
+    >
       <div className="flex flex-col lg:flex-row justify-center max-w-7xl gap-10 p-5">
         <div className="text-white min-w-80">
           <div className="flex flex-col lg:flex-row">
@@ -15,7 +18,7 @@ export default function BookAvailable({ openPopForm }:Record<string,any>) {
               <p>Center for Implant Dentistry ?</p>
               <div>
                 <button
-                 onClick={()=>openPopForm()}
+                  onClick={() => openPopForm()}
                   type="button"
                   className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                 >
@@ -52,16 +55,18 @@ export default function BookAvailable({ openPopForm }:Record<string,any>) {
             Receive Special Offers
           </h3>
           {!ispecial && (
-            <div className="mt-4 flex flex-wrap lg:flex-nowrap  gap-3">
+            <div className="mt-4 flex flex-wrap lg:flex-nowrap gap-3">
+              <label className="text-red-700">*</label>
               <input
                 type="text"
                 placeholder="Your Name"
                 required={true}
                 className="border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
               />
+              <label className="text-red-700">*</label>
               <input
                 type="email"
-               required={true}
+                required={true}
                 placeholder="Your Email"
                 className="border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
               />

@@ -5,7 +5,7 @@ import useNavigateToContact from "../../hook/navToContact";
 import MainCard from "../MainCard/MainCard";
 
 export default function SaveOffer({ openPopForm }: Record<string, any>) {
-  const [hours, setHours] = useState<number>(40);
+  const [hours, setHours] = useState<number>(48);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
   const navigateToContact = useNavigateToContact();
@@ -34,9 +34,9 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
   const formatTime = (num: number) => num.toString().padStart(2, "0");
   return (
     <div className="w-full flex justify-center bg-[#153371] lg:py-16 ">
-      <div className="flex flex-col lg:flex-row max-w-screen-xl items-center justify-center w-full ">
-        <div className="w-full flex flex-col items-center lg:items-start justify-center p-5 gap-3 ">
-          <div className="w-full flex max-w-sm text-center lg:text-left bg-black bg-opacity-70 text-white space-x-3 py-1 px-5  rounded-lg font-semibold">
+      <div className="flex flex-col md:flex-row max-w-screen-xl items-center justify-center w-full ">
+        <div className="flex-1 flex flex-col items-center md:items-start justify-center p-5 gap-3 md:gap-8 ">
+          <div className="bg-gradient-to-r from-[#D31717] to-[#FE4141] rounded-xl w-fit flex max-w-sm text-center items-center lg:text-left bg-opacity-70 text-white space-x-3 py-2 md:py-1 px-5   font-bold lg:font-normal">
             <figure>
               <img
                 className="h-auto"
@@ -44,22 +44,22 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
                 alt=""
               />
             </figure>
-            <span className="uppercase text-lg">Save the Offer!</span>
-            <span className="text-base lg:text-lg italic">{`${formatTime(
+            <span className="uppercase text-[16px] lg:text-2xl italic md:not-italic">Save the Offer !</span>
+            <span className="text-lg font-semibold md:font-normal md:text-2xl">{`${formatTime(
               hours
             )}:${formatTime(minutes)}:${formatTime(seconds)}`}</span>
           </div>
 
-          <div className="w-full  text-center lg:text-left space-y-2 text-white">
-            <h1 className="text-xl lg:text-4xl font-bold">
+          <div className="w-full  text-center md:text-left md:space-y-5 text-white">
+            <h1 className="text-2xl md:text-3xl  font-bold">
               Smile Confidently with Dental Implants
             </h1>
-            <h2 className="lg:text-2xl">
+            <h2 className="text-base md:text-[26px] leading-8">
               Stable, natural-looking dental implants for a confident smile
             </h2>
           </div>
         </div>
-        <div className="w-full flex flex-col items-center px-5 gap-2 justify-center py-16">
+        <div className="flex-1 w-full flex flex-col items-center px-5 gap-5 justify-center py-16">
           <MainCard openPopForm={openPopForm} />
           <div className=" px-4 py-1 w-fit bg-[#224D5C] rounded-3xl flex items-center justify-center gap-3">
             <FontAwesomeIcon className="text-green-500" icon={faCheckCircle} />
