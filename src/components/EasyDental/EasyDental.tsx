@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
 
-export default function EasyDental() {
+export default function EasyDental({ openPopForm }:Record<string,any>) {
   const navigateToContact = useNavigateToContact();
   return (
     <div className="flex justify-center py-16">
@@ -19,7 +19,7 @@ export default function EasyDental() {
           </p>
           <div className="hidden lg:block">
             <button
-            onClick={() => navigateToContact()}
+            onClick={() => openPopForm()}
               type="button"
               className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
             >

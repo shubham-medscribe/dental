@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
 
-export default function DentalpriceDown() {
+export default function DentalpriceDown({ openPopForm}:Record<string,any>) {
   const arr = [
     "Permanent solution",
     "Improved chewing and speaking",
@@ -27,7 +27,7 @@ export default function DentalpriceDown() {
           </h1>
           <div className="w-full flex justify-center lg:justify-start">
             <button
-            onClick={useNavigateToContact()}
+            onClick={()=>openPopForm(true)}
               type="button"
               className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
             >

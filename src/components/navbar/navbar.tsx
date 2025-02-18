@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({openPopForm }:Record<string,any>) {
   const navigate = useNavigate();
 
   return (
@@ -18,7 +18,8 @@ export default function Navbar() {
         <div>
           <button
             onClick={() => {
-              navigate("/contact");
+              openPopForm();
+
             }}
             type="button"
             className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium lg:text-xl lg:px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 text-base px-2"

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faGrinStars } from "@fortawesome/free-solid-svg-icons";
-export default function Footer() {
+export default function Footer({ openPopForm }: Record<string, any>) {
   const [todayIndex, setTodayIndex] = useState<number | null>(null);
   const days = [
     "Monday",
@@ -173,7 +173,7 @@ export default function Footer() {
           <div>
             <p className="text-sm py-3 lg:max-w-[300px]">
               Above Fees may vary depending on specific needs of the patient.
-              Come in for a <a href="/contact" className="underline">free consultation</a>.
+              Come in for a <a onClick={()=>{openPopForm()}} className="underline cursor-pointer">free consultation</a>.
             </p>
           </div>
         </div>

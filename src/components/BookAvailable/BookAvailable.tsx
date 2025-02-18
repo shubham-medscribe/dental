@@ -2,7 +2,7 @@ import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
 import theme from "../constant/Constant";
 
-export default function BookAvailable() {
+export default function BookAvailable({ openPopForm }:Record<string,any>) {
   const [ispecial, setIspecial] = React.useState(false);
   const [isBooked, setBooked] = React.useState(true);
   const navigateToContact = useNavigateToContact();
@@ -15,7 +15,7 @@ export default function BookAvailable() {
               <p>Center for Implant Dentistry ?</p>
               <div>
                 <button
-                 onClick={()=>{navigateToContact()}}
+                 onClick={()=>openPopForm()}
                   type="button"
                   className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                 >
