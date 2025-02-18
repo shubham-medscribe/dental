@@ -1,9 +1,10 @@
 import React from "react";
+import useNavigateToContact from "../../hook/navToContact";
 
 export default function BookAvailable() {
   const [ispecial, setIspecial] = React.useState(false);
   const [isBooked, setBooked] = React.useState(true);
-
+  const navigateToContact = useNavigateToContact();
   return (
     <div className="w-full bg-[#C11C3B] flex justify-center px-5 py-36 relative">
       <div className="flex flex-col lg:flex-row justify-center max-w-7xl gap-10 p-5">
@@ -13,6 +14,7 @@ export default function BookAvailable() {
               <p>Center for Implant Dentistry ?</p>
               <div>
                 <button
+                 onClick={()=>{navigateToContact()}}
                   type="button"
                   className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                 >

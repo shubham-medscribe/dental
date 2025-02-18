@@ -1,12 +1,13 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
+import useNavigateToContact from "../../hook/navToContact";
 
 export default function SaveOffer() {
   const [hours, setHours] = useState<number>(40);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
-
+  const navigateToContact = useNavigateToContact();
   useEffect(() => {
     if (hours === 0 && minutes === 0 && seconds === 0) return;
 
@@ -103,6 +104,7 @@ function Card() {
 
         <div className="flex justify-center ">
           <button
+           onClick={useNavigateToContact()}
             type="button"
             className="w-[15em] focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-base px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
           >
