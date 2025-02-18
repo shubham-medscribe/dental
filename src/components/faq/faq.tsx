@@ -26,7 +26,7 @@ export default function FAQ() {
             />
           </figure>
           <h2 className=" font-bold text-base  sm:text-lg">
-            3381 Walnut Ave, Fremont CA 94538, United States
+          3381 Walnut Ave, Fremont, CA 
           </h2>
         </div>
         <div className="flex flex-col gap-3">

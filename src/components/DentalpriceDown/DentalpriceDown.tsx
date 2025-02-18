@@ -81,12 +81,12 @@ export default function DentalpriceDown() {
             </div>
           </div>
 
-          <div className="w-full p-5 lg:shadow-lg rounded-lg">
-            <h2 className="text-[#FEAC33] font-bold text-xl  text-center">
+          <div className="w-full p-5 lg:shadow-lg rounded-lg space-y-1">
+            <h2 className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left">
               $2,495
             </h2>
-            <h2 className=" font-bold text-3xl  text-center">Total</h2>
-            <p className="text-center font-medium py-1">
+            <h2 className=" font-bold text-3xl  text-center lg:text-left">Total</h2>
+            <p className="text-center lg:text-left font-medium py-1">
               Our clinic uses the latest advances in dental implant procedures
               in order ensure superior lifelong results
             </p>
@@ -124,8 +124,7 @@ export default function DentalpriceDown() {
                   </figure>
                 </div>
                 <div className="flex flex-col">
-                  <p>Fremont & CA's Top Permanent Teeth Specialist</p>
-                  <div className="w-10 h-[2px] rounded-xl bg-gray-400"></div>
+                  <p className="font-semibold">Fremont & CA's Top Permanent Teeth Specialist</p>
                   <div className="flex flex-col gap-2  mt-3">
                     <span className="font-bold text-xl">Dr. Sambhav Jain</span>
                     <span className="text-xl">DENTIST</span>
@@ -136,7 +135,7 @@ export default function DentalpriceDown() {
           </div>
 
         <div className="h-auto flex  items-center justify-center">
-        <div className="w-fit  p-5 flex flex-col lg:flex-row justify-center gap-0 lg:gap-6">
+        <div className="w-fit  p-5 flex flex-col lg:flex-row justify-center gap-0 lg:gap-10">
             <div className="w-fit flex justify-center">
               <div>
                 {arr.map((item, index) => (
@@ -148,7 +147,7 @@ export default function DentalpriceDown() {
                       />
                     </div>
                     <div>
-                      <p className="font-medium">{item}</p>
+                      <p className="font-medium sm:text-xl lg:text-xl">{item}</p>
                     </div>
                   </div>
                 ))}
@@ -166,7 +165,7 @@ export default function DentalpriceDown() {
                       />
                     </div>
                     <div>
-                      <p className="font-medium">{item}</p>
+                    <p className="font-medium sm:text-xl lg:text-xl">{item}</p>
                     </div>
                   </div>
                 ))}

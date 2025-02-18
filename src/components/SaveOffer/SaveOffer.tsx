@@ -49,10 +49,10 @@ export default function SaveOffer() {
           </div>
 
           <div className="w-full  text-center lg:text-left space-y-2 text-white">
-            <h1 className="text-xl lg:text-3xl font-bold">
+            <h1 className="text-xl lg:text-4xl font-bold">
               Smile Confidently with Dental Implants
             </h1>
-            <h2 className="lg:text-lg">
+            <h2 className="lg:text-2xl">
               Stable, natural-looking dental implants for a confident smile
             </h2>
           </div>
