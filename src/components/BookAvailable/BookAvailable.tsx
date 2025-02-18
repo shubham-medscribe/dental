@@ -55,21 +55,25 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
             Receive Special Offers
           </h3>
           {!ispecial && (
-            <div className="mt-4 flex flex-wrap lg:flex-nowrap gap-3">
-              <label className="text-red-700">*</label>
+            <div className="mt-4 flex flex-col  md:flex-row md:flex-wrap lg:flex-nowrap gap-3">
+             <div className="w-full flex">
+             <label className="text-red-700 w-5 h-fit text-left">*</label>
               <input
                 type="text"
                 placeholder="Your Name"
                 required={true}
-                className="border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
+                className=" border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
               />
-              <label className="text-red-700">*</label>
+             </div>
+             <div className="w-full flex">
+             <label className="text-red-700 w-5 h-fit text-left">*</label>
               <input
                 type="email"
-                required={true}
                 placeholder="Your Email"
-                className="border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
+                required={true}
+                className=" border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
               />
+             </div>
               <button
                 onClick={() => setIspecial(true)}
                 className="px-6 py-3 font-semibold bg-orange-500 text-white rounded-xl hover:bg-orange-600 w-full "

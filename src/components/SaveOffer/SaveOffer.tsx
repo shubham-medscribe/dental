@@ -50,11 +50,11 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
             )}:${formatTime(minutes)}:${formatTime(seconds)}`}</span>
           </div>
 
-          <div className="w-full  text-center md:text-left md:space-y-5 text-white">
-            <h1 className="text-2xl md:text-3xl  font-bold">
+          <div className="w-full   text-center md:text-left sm:space-y-3 md:space-y-5 text-white px-8 sm:px-3 ">
+            <h1 className="text-lg sm:text-2xl md:text-3xl  font-bold">
               Smile Confidently with Dental Implants
             </h1>
-            <h2 className="text-base md:text-[26px] leading-8">
+            <h2 className="text-base md:text-[26px] md:leading-8">
               Stable, natural-looking dental implants for a confident smile
             </h2>
           </div>
