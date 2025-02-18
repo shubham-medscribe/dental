@@ -46,7 +46,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
       </div>
 
       {/* Recieve Special Offers */}
-      <div className="w-4/5 lg:max-w-[820px] lg:min-h-[250px] flex justify-center items-center  absolute bottom-0 left-1/2 -translate-x-1/2  translate-y-1/2">
+      <div className="w-[90%] lg:max-w-[820px] lg:min-h-[250px] flex justify-center items-center  absolute bottom-0 left-1/2 -translate-x-1/2  translate-y-1/2">
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-12 max-w-5xl w-full text-center">
           <h3 className="text-xl font-semibold flex items-center gap-2">
             <span role="img" aria-label="gift">
@@ -55,7 +55,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
             Receive Special Offers
           </h3>
           {!ispecial && (
-            <div className="mt-4 flex flex-col  md:flex-row md:flex-wrap lg:flex-nowrap gap-3">
+            <div className="mt-4 flex flex-col  sm:flex-row flex-wrap md:flex-nowrap gap-3">
              <div className="w-full flex">
              <label className="text-red-700 w-5 h-fit text-left">*</label>
               <input
