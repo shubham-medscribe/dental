@@ -1,10 +1,14 @@
-import { faBars, faHamburger } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faHamburger,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import theme from "../constant/Constant";
 
-export default function Navbar({openPopForm }:Record<string,any>) {
+export default function Navbar({ openPopForm }: Record<string, any>) {
   const navigate = useNavigate();
 
   return (
@@ -13,7 +17,7 @@ export default function Navbar({openPopForm }:Record<string,any>) {
         <div>
           <figure>
             <img
-              className="w-60 h-auto object-cover object-center"
+              className="w-44 sm:w-60 h-auto object-cover object-center"
               src="https://bayareaimplantdentistry.com/wp-content/uploads/2019/09/logo.png"
             />
           </figure>
@@ -22,16 +26,23 @@ export default function Navbar({openPopForm }:Record<string,any>) {
           <button
             onClick={() => {
               openPopForm();
-
             }}
             type="button"
             className="hidden md:block focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium lg:text-xl lg:px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 text-base px-2"
           >
             Free Consultation
           </button>
-          <button style={{backgroundColor:theme}} className="md:hidden rounded-full w-12 h-12 text-white">
-            <FontAwesomeIcon icon={faBars}/>
-          </button>
+          <a href="tel:+1510-574-0496">
+            <button
+              style={{ backgroundColor: theme }}
+              className="md:hidden rounded-full p-3 space-x-2 text-white"
+            >
+              <span>
+                <FontAwesomeIcon icon={faPhone} />
+              </span>
+              <span>Call us</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

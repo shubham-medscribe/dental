@@ -13,7 +13,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 2,
-      question: "Why Choose center for implant dentistry ?",
+      question: "Why Choose Dental Implants ?",
       headline:
         "Dental implants offer numerous benefits that make them a superior choice over traditional tooth replacement options:",
       answer: [
@@ -40,7 +40,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 2,
-      question: "Why Choose center for implant dentistry for Dental Implants?",
+      question: "Why Choose center for implant dentistry for Dental Implants ?",
       headline:
         "At center for implant dentistry Clinic, we are dedicated to providing exceptional dental care with a focus on patient satisfaction. Here’s why our clinic is the best choice for your dental implants:",
       answer: [
@@ -62,7 +62,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 1,
-      question: "Call us now ?",
+      question: "Call us now!",
       answer: (
         <p>
           Ready to transform your smile with the best dental implants?{" "}
@@ -125,9 +125,9 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
                         <p className="pl-6 text-base">{i.answer}</p>
                       )}
                       {i.type === 2 && (
-                        <div>
+                        <div className="space-y-3">
                           <p className="pl-11">{i.headline}</p>
-                          <ul className="space-y-1 list-disc ml-5 pl-6">
+                          <ul className="space-y-2 list-disc ml-5 pl-6">
                             {Array.isArray(i.answer) &&
                               i.answer.map((answer: any, index: number) => {
                                 return (
@@ -144,7 +144,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
                       )}
 
                       {i.type === 3 && (
-                        <div>
+                           <div className="space-y-3">
                           <p className="pl-11">{i.headline}</p>
                           <ol className="space-y-1 list-decimal ml-5 pl-6">
                             {Array.isArray(i.answer) &&

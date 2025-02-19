@@ -15,7 +15,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
         <div className="text-white min-w-80">
           <div className="flex flex-col lg:flex-row">
             <div className="space-y-5 text-2xl">
-              <p>Center for Implant Dentistry ?</p>
+              <p>Why Center for Implant Dentistry ?</p>
               <div>
                 <button
                   onClick={() => openPopForm()}
