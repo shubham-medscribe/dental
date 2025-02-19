@@ -146,7 +146,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
                       {i.type === 3 && (
                         <div>
                           <p className="pl-11">{i.headline}</p>
-                          <ol className="space-y-1 list-decimal  ml-5 pl-6">
+                          <ol className="space-y-1 list-decimal ml-5 pl-6">
                             {Array.isArray(i.answer) &&
                               i.answer.map((answer: any, index: number) => {
                                 return (
