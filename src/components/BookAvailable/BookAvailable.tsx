@@ -55,7 +55,13 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
             Receive Special Offers
           </h3>
           {!ispecial && (
-            <form className="mt-4 flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-3">
+            <form
+              onSubmit={(e: any) => {
+                e.preventDefault();
+                setIspecial(true);
+              }}
+              className="mt-4 flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-3"
+            >
               <div className="w-full flex">
                 <label className="text-red-700 w-5 h-fit text-left">*</label>
                 <input
