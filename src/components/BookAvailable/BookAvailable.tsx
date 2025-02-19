@@ -55,32 +55,32 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
             Receive Special Offers
           </h3>
           {!ispecial && (
-            <div className="mt-4 flex flex-col  sm:flex-row flex-wrap md:flex-nowrap gap-3">
-             <div className="w-full flex">
-             <label className="text-red-700 w-5 h-fit text-left">*</label>
-              <input
-                type="text"
-                placeholder="Your Name"
-                required={true}
-                className=" border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
-              />
-             </div>
-             <div className="w-full flex">
-             <label className="text-red-700 w-5 h-fit text-left">*</label>
-              <input
-                type="email"
-                placeholder="Your Email"
-                required={true}
-                className=" border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
-              />
-             </div>
+            <form className="mt-4 flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-3">
+              <div className="w-full flex">
+                <label className="text-red-700 w-5 h-fit text-left">*</label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  required
+                  className="border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
+                />
+              </div>
+              <div className="w-full flex">
+                <label className="text-red-700 w-5 h-fit text-left">*</label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  required
+                  className="border px-3 py-2 rounded-2xl flex-1 bg-[#F2F2F2]"
+                />
+              </div>
               <button
-                onClick={() => setIspecial(true)}
-                className="px-6 py-3 font-semibold bg-orange-500 text-white rounded-xl hover:bg-orange-600 w-full "
+                type="submit"
+                className="px-6 py-3 font-semibold bg-orange-500 text-white rounded-xl hover:bg-orange-600 w-full"
               >
                 SUBSCRIBE
               </button>
-            </div>
+            </form>
           )}
 
           {ispecial && (

@@ -3,47 +3,77 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function FAQ() {
+export default function FAQ({ openPopForm }: Record<string, any>) {
   const faqItems = [
     {
-      question: "What are Dental Implants?",
+      type: 1,
+      question: "What are Dental Implants ?",
       answer:
         "Dental implants are artificial tooth roots made from titanium that are surgically placed into the jawbone. They serve as a sturdy foundation for replacement teeth, such as crowns, bridges, or dentures. Unlike other tooth replacement options, dental implants integrate with the bone, making them a long-term, stable solution for missing teeth.",
     },
     {
-      question: "The Dental Implant Process at Fremont Implant Clinic",
-      answer:
-        "The process involves a thorough consultation, implant placement surgery, healing time, and the fitting of replacement teeth.",
+      type: 2,
+      question: "Why Choose center for implant dentistry ?",
+      headline:
+        "Dental implants offer numerous benefits that make them a superior choice over traditional tooth replacement options:",
+      answer: [
+        "Long-Lasting Durability: Dental implants are designed to last a lifetime with proper care, providing a permanent solution to tooth loss.",
+        "Stable and Secure Fit: Unlike dentures, implants are securely anchored in your jawbone, offering unparalleled stability.",
+        "Natural Appearance: Custom-made to match your existing teeth, dental implants provide a seamless and natural look.",
+        "Improved Oral Health: Implants help maintain jawbone density, preventing bone loss and preserving facial structure.",
+        "Enhanced Comfort: With dental implants, there’s no risk of slipping or discomfort, allowing you to eat, speak, and smile with confidence.",
+        "Easy Maintenance: Care for your dental implants just like your natural teeth, with regular brushing and flossing.",
+      ],
     },
     {
-      question: "The Benefits of Dental Implants at Fremont Implant Clinic",
-      answer:
-        "Dental implants offer a natural-looking solution, improve speech, restore function, and last a long time with proper care.",
+      type: 3,
+      question: "The Dental Implant Procedure - What to Expect",
+      headline:
+        "Understanding the process can help you feel more comfortable and prepared for your new smile:",
+      answer: [
+        "Initial Consultation: Our dental experts will assess your oral health and discuss your goals to determine if dental implants are the right solution for you.",
+        "Customized Treatment Plan: Using advanced imaging technology, we create a detailed treatment plan tailored to your specific needs.",
+        "Implant Placement: The procedure involves placing titanium implants into your jawbone, which will serve as the foundation for your new teeth.",
+        "Healing Period: You will receive temporary restorations to wear during the healing process, ensuring functionality and aesthetics.",
+        "Permanent Restoration: After the implants have fully integrated with your jawbone, we replace the temporary restorations with your custom-made permanent teeth.",
+      ],
     },
     {
-      question: "Why Choose Dental Implants Over Other Options?",
-      answer:
-        "Dental implants are more durable, provide better function, and are more natural-looking than alternatives like dentures.",
+      type: 2,
+      question: "Understanding the Cost of Dental Implants",
+      headline:
+        "Dental implants are more than just a cosmetic solution; they are an investment in your overall well-being. Here’s why:",
+      answer: [
+        "Boosted Confidence: A complete, beautiful smile can significantly enhance your self-esteem and social interactions.",
+        "Better Nutrition: Dental implants allow you to enjoy a varied diet, improving your nutritional intake and overall health.",
+        "Cost-Effective Solution: Though the upfront cost is higher, the durability and minimal maintenance of dental implants make them a cost-effective option over time.",
+      ],
     },
     {
-      question: "Are You a Candidate for Dental Implants?",
-      answer:
-        "Candidates should have healthy gums and enough bone to support the implant. Our team will evaluate your suitability during a consultation.",
+      type: 2,
+      question: "Understanding the Cost of Dental Implants",
+      headline:
+        "At Redwood City Implant Clinic, we are dedicated to providing exceptional dental care with a focus on patient satisfaction. Here’s why our clinic is the best choice for your dental implants:",
+      answer: [
+        "Boosted Confidence: A complete, beautiful smile can significantly enhance your self-esteem and social interactions.",
+        "Better Nutrition: Dental implants allow you to enjoy a varied diet, improving your nutritional intake and overall health.",
+        "Cost-Effective Solution: Though the upfront cost is higher, the durability and minimal maintenance of dental implants make them a cost-effective option over time.",
+      ],
     },
     {
-      question: "Types of Dental Implants at Fremont Implant Clinic",
-      answer:
-        "We offer various implant types such as endosteal and subperiosteal implants to cater to different patient needs.",
-    },
-    {
-      question: "Caring for Your Dental Implants",
-      answer:
-        "Regular brushing, flossing, and routine dental checkups are essential to maintaining your dental implants.",
-    },
-    {
-      question: "Call us Now",
-      answer:
-        "Contact us at (510) 574-0496 for more information or to book an appointment.",
+      type: 1,
+      question: "What are Dental Implants?",
+      answer: (
+        <p>
+          Ready to transform your smile with the best dental implants?{" "}
+          <button onClick={() => openPopForm()} className="text-blue-700">
+            Contact us
+          </button>
+          &nbsp;at&nbsp;
+          <span className="">center for implant dentistry</span> to schedule your consultation and learn more about
+          how we can help you achieve a beautiful, functional smile.
+        </p>
+      ),
     },
   ];
 
@@ -68,7 +98,7 @@ export default function FAQ() {
             </h2>
           </div>
           <div className="flex flex-col gap-3">
-            {faqItems.map((item, index) => (
+            {faqItems.map((i: any, index: number) => (
               <div key={index} className="w-full border-b pb-2">
                 <div
                   className="flex gap-2 items-center cursor-pointer py-2"
@@ -80,9 +110,7 @@ export default function FAQ() {
                       selectedFAQ === index ? "rotate-90" : ""
                     }`}
                   />
-                  <p className="font-bold text-sm sm:text-xl">
-                    {item.question}
-                  </p>
+                  <p className="font-bold text-sm sm:text-xl">{i.question}</p>
                 </div>
                 <AnimatePresence>
                   {selectedFAQ === index && (
@@ -93,7 +121,46 @@ export default function FAQ() {
                       transition={{ duration: 0.3 }}
                       className="mt-2 text-gray-700"
                     >
-                      <p className="font-medium">{item.answer}</p>
+                      {i.type === 1 && (
+                        <p className="pl-6 text-base">{i.answer}</p>
+                      )}
+                      {i.type === 2 && (
+                        <div>
+                          <p className="pl-11">{i.headline}</p>
+                          <ul className="space-y-1 list-disc ml-5 pl-6">
+                            {Array.isArray(i.answer) &&
+                              i.answer.map((answer: any, index: number) => {
+                                return (
+                                  <li>
+                                    <span className="font-bold">
+                                      {answer.split(":")[0]}
+                                    </span>
+                                    : {answer.split(":")[1]}
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                        </div>
+                      )}
+
+                      {i.type === 3 && (
+                        <div>
+                          <p className="pl-11">{i.headline}</p>
+                          <ol className="space-y-1 list-decimal  ml-5 pl-6">
+                            {Array.isArray(i.answer) &&
+                              i.answer.map((answer: any, index: number) => {
+                                return (
+                                  <li>
+                                    <span className="font-bold">
+                                      {answer.split(":")[0]}
+                                    </span>
+                                    : {answer.split(":")[1]}
+                                  </li>
+                                );
+                              })}
+                          </ol>
+                        </div>
+                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>

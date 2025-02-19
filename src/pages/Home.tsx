@@ -22,7 +22,7 @@ export default function Home() {
       <ReviewSlider />
       <DentalpriceDown openPopForm={() => setClose(true)} />
       <EasyDental openPopForm={() => setClose(true)} />
-      <FAQ />
+      <FAQ openPopForm={() => setClose(true)}/>
       <BookAvailable openPopForm={() => setClose(true)} />
       <Footer openPopForm={() => setClose(true)}/>
     </div>
