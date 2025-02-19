@@ -51,7 +51,7 @@ export default function ReviewSlider() {
       <div className="text-xl flex flex-col items-center gap-2 py-5">
         <div className="text-4xl">❤️</div>
         <div className="capitalize font-bold italic lg:text-3xl">
-          <h1>Real stories form happy patients</h1>
+          <h1>Real stories from happy patients</h1>
         </div>
       </div>
 
