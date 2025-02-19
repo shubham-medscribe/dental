@@ -13,7 +13,7 @@ export default function ThankYou() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center p-6">
       {showConfetti && <Confetti />}
-      
+
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function ThankYou() {
         transition={{ delay: 0.3 }}
         className="text-lg sm:text-xl max-w-lg"
       >
-        We appreciate your trust and support. Your journey with us means the world! 🌍
+        Thank you for information, we will back to you as soon as possible! 🌍
       </motion.p>
 
       <motion.div

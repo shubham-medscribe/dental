@@ -9,16 +9,19 @@ import validateForm from "../../functions/validatePopUpForm";
 import { useNavigate } from "react-router-dom";
 
 export default function PopFor({ closePopForm }: Record<string, any>) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [message, setMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
     phone: "",
     financing: "",
-    creditscore: "",
+    credit_score: "",
+    co_signer: "",
+    home_owner: "",
     note: "",
+    annual_income:'',
     consent: false,
   });
 
@@ -37,12 +40,14 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
       setMessage("Please fill in all fields.");
       return;
     }
+    console.log(formData);
+
     setFormData((preState: any) => {
       return { ...preState, phone: "+" + preState.phone };
     });
 
     if (validateForm(formData)) {
-      navigate("/thank-you")
+      navigate("/thank-you");
       return;
     }
     setMessage("Message sent successfully!");
@@ -73,17 +78,17 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
         <h2 className="text-xl font-bold mb-4 text-center">
           📅 BOOK A FREE CONSULTATION
         </h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="overflow-y-auto h-96 sm:h-fit">
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
               <label className="block text-sm font-semibold mb-1">
-                First <span className="text-red-700">*</span>
+                First Name <span className="text-red-700">*</span>
               </label>
               <input
                 type="text"
-                name="firstName"
+                name="first_name"
                 placeholder="First"
-                value={formData.firstName}
+                value={formData.first_name}
                 onChange={handleChange}
                 className="border p-2 rounded-lg w-full"
                 required
@@ -91,13 +96,13 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
             </div>
             <div>
               <label className="block text-sm font-semibold mb-1">
-                Last <span className="text-red-700">*</span>
+                Last Name<span className="text-red-700">&nbsp;*</span>
               </label>
               <input
                 type="text"
-                name="lastName"
+                name="last_name"
                 placeholder="Last"
-                value={formData.lastName}
+                value={formData.last_name}
                 onChange={handleChange}
                 className="border p-2 rounded-lg w-full"
                 required
@@ -154,6 +159,7 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
               <option value="no">No</option>
             </select>
           </div>
+          {/* Credit Score Field */}
           {formData.financing === "yes" && (
             <motion.div
               animate={{ opacity: 1 }}
@@ -166,19 +172,127 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
                 Credit Score <span className="text-red-700">*</span>
               </label>
               <select
-                name="creditscore"
-                value={formData.creditscore}
+                name="credit_score"
+                value={formData.credit_score}
                 onChange={handleChange}
                 className="border p-2 rounded-lg w-full"
                 required
               >
-                <option value="">Please choose an option</option>{" "}
+                <option value="">Please choose an option</option>
                 <option value="0-549">Below 549</option>
                 <option value="550-559">550-559</option>
                 <option value="600-649">600-649</option>
                 <option value="650-699">650-699</option>
                 <option value="above-700">Above 700</option>
               </select>
+            </motion.div>
+          )}
+
+          {/* Co-Signer Question */}
+          {formData.financing === "yes" && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              className="mb-4"
+            >
+              <label className="block text-sm font-semibold mb-1">
+                Do you have a co-signer with a credit score 650+?
+                <span className="text-red-700">&nbsp;*</span>
+              </label>
+              <div className="flex space-x-4">
+                <label className="flex items-center">
+                  <input
+                    type="radio"
+                    name="co_signer"
+                    value={"yes"}
+                    checked={formData.co_signer === "yes"}
+                    onChange={handleChange}
+                    className="mr-2"
+                    required
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center">
+                  <input
+                    type="radio"
+                    name="co_signer"
+                    value={"no"}
+                    checked={formData.co_signer === "no"}
+                    onChange={handleChange}
+                    className="mr-2"
+                    required
+                  />
+                  No
+                </label>
+              </div>
+            </motion.div>
+          )}
+
+          {formData.financing === "yes" && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              className="mb-4"
+            >
+              <label className="block text-sm font-semibold mb-1">
+                What's your annnual salary
+                <span className="text-red-700">&nbsp;*</span>
+              </label>
+              <input
+                type="number"
+                name="annual_income"
+                placeholder="Annual income"
+                value={formData.annual_income}
+                onChange={handleChange}
+                className="border p-2 rounded-lg w-full"
+                required
+              />
+            </motion.div>
+          )}
+
+          {/* home owner*/}
+          {formData.financing === "yes" && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              className="mb-4"
+            >
+              <label className="block text-sm font-semibold mb-1">
+                Are you home owner ?
+                <span className="text-red-700">&nbsp;*</span>
+              </label>
+              <div className="flex space-x-4">
+                <label className="flex items-center">
+                  <input
+                    type="radio"
+                    name="home_owner"
+                    value={"yes"}
+                    checked={formData.home_owner === "yes"}
+                    onChange={handleChange}
+                    className="mr-2"
+                    required
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center">
+                  <input
+                    type="radio"
+                    name="home_owner"
+                    value={"no"}
+                    checked={formData.home_owner === "no"}
+                    onChange={handleChange}
+                    className="mr-2"
+                    required
+                  />
+                  No
+                </label>
+              </div>
             </motion.div>
           )}
 
