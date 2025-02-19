@@ -99,10 +99,10 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
       </div>
 
       <div className="w-full flex flex-col  justify-center max-w-screen-xl pt-10">
-        <div className="uppercase py-2 font-bold text-3xl text-center">
+        <div className="uppercase  font-bold py-2 text-xl lg:text-3xl text-center">
           <h1>🤔</h1>
         </div>
-        <div className="uppercase italic font-extrabold  text-3xl text-center">
+        <div className="uppercase italic font-extrabold text-xl lg:text-3xl text-center">
           <h1>Why dental Implants ?</h1>
         </div>
         <div className="flex flex-col lg:flex-row w-full justify-center gap-10 mt-8">
