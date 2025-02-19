@@ -62,7 +62,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 1,
-      question: "What are Dental Implants?",
+      question: "Call us now ?",
       answer: (
         <p>
           Ready to transform your smile with the best dental implants?{" "}
