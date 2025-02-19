@@ -40,7 +40,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 2,
-      question: "Why Choose center for implant dentistry for Dental Implants ?",
+      question: "Why Choose Center for Implant Dentistry for Dental Implants ?",
       headline:
         "At center for implant dentistry Clinic, we are dedicated to providing exceptional dental care with a focus on patient satisfaction. Here’s why our clinic is the best choice for your dental implants:",
       answer: [
@@ -62,7 +62,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 1,
-      question: "Call us now!",
+      question: "Call us Now!",
       answer: (
         <p>
           Ready to transform your smile with the best dental implants?{" "}
