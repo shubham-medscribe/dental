@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-export default function CallUsBar({ openPopForm }: Record<string, any>) {
+export default function CallUsBar() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -15,12 +15,12 @@ export default function CallUsBar({ openPopForm }: Record<string, any>) {
   if (!mounted) return null;
 
   return createPortal(
-    <motion.div
-      onClick={() => openPopForm()}
+    <motion.a
+      href="tel:+1510-574-0496"
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 80 }}
-      className="cursor-pointer fixed bottom-0 left-0 w-full bg-black text-white py-3 px-6 flex items-center gap-3 justify-center z-50"
+      className="sm:hidden cursor-pointer fixed bottom-0 left-0 w-full bg-black text-white py-3 px-6 flex items-center gap-3 justify-center z-50"
     >
       {/* Infinite Left-Right Motion */}
       <motion.div
@@ -44,7 +44,7 @@ export default function CallUsBar({ openPopForm }: Record<string, any>) {
       <span className="text-sm sm:text-base font-semibold">
         Call us to get Free Consultation
       </span>
-    </motion.div>,
+    </motion.a>,
     document.body
   );
 }

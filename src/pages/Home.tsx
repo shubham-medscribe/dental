@@ -15,7 +15,7 @@ export default function Home() {
   const [open, setClose] = useState<boolean>(false);
   return (
     <div className="w-full">
-      <CallUsBar openPopForm={() => setClose(true)}/>
+      <CallUsBar/>
       {open && <PopFor closePopForm={() => setClose(false)}/>}
       <Navbar openPopForm={() => setClose(true)} />
       <LocationAndOfficeHour />

@@ -3,8 +3,13 @@ import { motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
+import validateForm from "../../functions/validatePopUpForm";
+import { useNavigate } from "react-router-dom";
 
 export default function PopFor({ closePopForm }: Record<string, any>) {
+  const navigate = useNavigate()
   const [message, setMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -12,6 +17,7 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
     email: "",
     phone: "",
     financing: "",
+    creditscore: "",
     note: "",
     consent: false,
   });
@@ -26,6 +32,19 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+
+    if (!validateForm(formData)) {
+      setMessage("Please fill in all fields.");
+      return;
+    }
+    setFormData((preState: any) => {
+      return { ...preState, phone: "+" + preState.phone };
+    });
+
+    if (validateForm(formData)) {
+      navigate("/thank-you")
+      return;
+    }
     setMessage("Message sent successfully!");
     console.log(formData);
   };
@@ -43,8 +62,13 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
         transition={{ duration: 0.3 }}
         onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the form
       >
-        <button onClick={()=>{closePopForm()}} className="absolute top-0 right-0 p-2 sm:p-5">
-          <FontAwesomeIcon icon={faClose}/>
+        <button
+          onClick={() => {
+            closePopForm();
+          }}
+          className="absolute top-0 right-0 p-2 sm:p-5"
+        >
+          <FontAwesomeIcon icon={faClose} />
         </button>
         <h2 className="text-xl font-bold mb-4 text-center">
           📅 BOOK A FREE CONSULTATION
@@ -100,14 +124,17 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
             <label className="block text-sm font-semibold mb-1">
               Phone Number <span className="text-red-700">*</span>
             </label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
+            <PhoneInput
+              country={"us"} // Default country
               value={formData.phone}
-              onChange={handleChange}
-              className="border p-2 rounded-lg w-full"
-              required
+              onChange={(phone: string) => {
+                {
+                  setFormData({ ...formData, phone: phone });
+                }
+              }}
+              inputClass="border p-2 rounded-lg w-full"
+              containerClass="w-full"
+              inputStyle={{ width: "100%" }} // Ensures it takes full width
             />
           </div>
 
@@ -127,6 +154,33 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
               <option value="no">No</option>
             </select>
           </div>
+          {formData.financing === "yes" && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              className="mb-4"
+            >
+              <label className="block text-sm font-semibold mb-1">
+                Credit Score <span className="text-red-700">*</span>
+              </label>
+              <select
+                name="creditscore"
+                value={formData.creditscore}
+                onChange={handleChange}
+                className="border p-2 rounded-lg w-full"
+                required
+              >
+                <option value="">Please choose an option</option>{" "}
+                <option value="0-549">Below 549</option>
+                <option value="550-559">550-559</option>
+                <option value="600-649">600-649</option>
+                <option value="650-699">650-699</option>
+                <option value="above-700">Above 700</option>
+              </select>
+            </motion.div>
+          )}
 
           <div className="mb-4">
             <label className="block text-sm font-semibold mb-1">
