@@ -50,17 +50,6 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
       ],
     },
     {
-      type: 2,
-      question: "Understanding the Cost of Dental Implants",
-      headline:
-        "At Redwood City Implant Clinic, we are dedicated to providing exceptional dental care with a focus on patient satisfaction. Here’s why our clinic is the best choice for your dental implants:",
-      answer: [
-        "Boosted Confidence: A complete, beautiful smile can significantly enhance your self-esteem and social interactions.",
-        "Better Nutrition: Dental implants allow you to enjoy a varied diet, improving your nutritional intake and overall health.",
-        "Cost-Effective Solution: Though the upfront cost is higher, the durability and minimal maintenance of dental implants make them a cost-effective option over time.",
-      ],
-    },
-    {
       type: 1,
       question: "What are Dental Implants?",
       answer: (
