@@ -33,7 +33,7 @@ export default function Footer({ openPopForm }: Record<string, any>) {
   }, []);
 
   return (
-    <div className="w-full bg-[#2B2B2B] text-white  py-6 px-6 lg:py-24 space-y-4 flex justify-center pt-40 lg:pt-40">
+    <div className="w-full pb-10 md:pb-0 bg-[#2B2B2B] text-white  py-6 px-6 lg:py-24 space-y-4 flex justify-center pt-40 lg:pt-40">
       <div className="w-full  flex flex-col lg:flex-row gap-10 lg:gap-28 sm:items-center justify-center">
         <div className="max-w-lg w-full">
           <div className="w-full">
