@@ -78,7 +78,7 @@ export default function PopFor({ closePopForm }: Record<string, any>) {
         <h2 className="text-xl font-bold mb-4 text-center">
           📅 BOOK A FREE CONSULTATION
         </h2>
-        <form onSubmit={handleSubmit} className="overflow-y-auto h-96 sm:h-fit">
+        <form onSubmit={handleSubmit} className="overflow-y-auto h-96 xl:h-fit">
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
               <label className="block text-sm font-semibold mb-1">
