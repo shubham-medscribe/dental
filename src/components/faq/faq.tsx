@@ -40,6 +40,17 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
     },
     {
       type: 2,
+      question: "Why Choose center for implant dentistry for Dental Implants?",
+      headline:
+        "At center for implant dentistry Clinic, we are dedicated to providing exceptional dental care with a focus on patient satisfaction. Here’s why our clinic is the best choice for your dental implants:",
+      answer: [
+        "Experienced Professionals: Our team of skilled dental specialists has extensive experience in implant dentistry.",
+        "State-of-the-Art Technology: We utilize the latest dental technologies and techniques to ensure precise and effective treatment.",
+        "Personalized Care: From your initial consultation to post-procedure follow-ups, we provide personalized care every step of the way."
+      ],
+    },
+    {
+      type: 2,
       question: "Understanding the Cost of Dental Implants",
       headline:
         "Dental implants are more than just a cosmetic solution; they are an investment in your overall well-being. Here’s why:",
