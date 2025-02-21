@@ -1,5 +1,6 @@
 import React from "react";
 import Info from "../../constant/dentist_info";
+import theme from "../../constant/Constant";
 
 export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
   return (
@@ -13,6 +14,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             </h1>
             <div className=" flex justify-center lg:justify-start">
               <button
+              style={{ backgroundColor: theme }}
                 onClick={() => openPopForm(true)}
                 type="button"
                 className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
@@ -26,7 +28,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
         <div className="flex flex-col lg:gap-8  w-full p-5 shadow-lg rounded-lg lg:shadow-none">
           <div className="flex flex-col lg:gap-10  lg:flex-row items-center justify-center">
             <div className="bg-white w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg lg:flex items-center flex-col justify-center">
-              <h2 className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-full">
+              <h2 style={{color: theme }} className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-full">
                 Free
               </h2>
               <h2 className=" font-bold text-xl  text-center lg:text-left w-full">
@@ -68,7 +70,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
           </div>
 
           <div className="bg-white w-full p-5 lg:shadow-lg rounded-lg space-y-1">
-            <h2 className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left">
+            <h2 style={{color:theme}} className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left">
               $2,495
             </h2>
             <h2 className=" font-bold text-xl  text-center lg:text-left">

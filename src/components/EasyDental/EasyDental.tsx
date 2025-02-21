@@ -2,6 +2,7 @@ import { faCheck, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
+import theme from "../../constant/Constant";
 
 export default function EasyDental({ openPopForm }: Record<string, any>) {
   const navigateToContact = useNavigateToContact();
@@ -19,6 +20,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
           </p>
           <div className="hidden lg:block">
             <button
+            style={{ backgroundColor: theme }}
               onClick={() => openPopForm()}
               type="button"
               className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
@@ -106,6 +108,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
 
         <div className="lg:hidden py-10">
           <button
+          style={{ backgroundColor: theme }}
             onClick={() => openPopForm(true)}
             type="button"
             className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"

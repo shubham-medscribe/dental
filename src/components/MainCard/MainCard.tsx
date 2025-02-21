@@ -7,7 +7,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
   return (
     <div className="w-full flex flex-col items-center gap-5 bg-white rounded-3xl  px-5 py-5  max-w-[419px]">
       <div className="w-[263px]  sm:w-[290px] lg:w-[320px] xl:max-w-[380px] mr-[11.5%] sm:mr-[10%]">
-        <video autoPlay loop muted controls={false} className="w-full rounded-2xl ">
+        <video  loop muted controls={true} className="w-full rounded-2xl ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -56,6 +56,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
               openPopForm();
             }}
             type="button"
+            style={{ backgroundColor: theme }}
             className="w-[15em] focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-base px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
           >
             Free Consultation

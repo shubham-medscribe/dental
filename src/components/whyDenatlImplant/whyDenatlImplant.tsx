@@ -1,6 +1,7 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import theme from "../../constant/Constant";
 
 export default function WhyDenatlImplant() {
   const arr = [
@@ -35,6 +36,7 @@ export default function WhyDenatlImplant() {
                   <div key={index} className=" flex gap-3">
                     <div>
                       <FontAwesomeIcon
+                      style={{color:theme}}
                         className="text-[#153371]"
                         icon={faCheckCircle}
                       />
@@ -55,6 +57,7 @@ export default function WhyDenatlImplant() {
                   <div key={index} className=" flex gap-3">
                     <div>
                       <FontAwesomeIcon
+                       style={{color:theme}}
                         className="text-[#153371]"
                         icon={faCheckCircle}
                       />

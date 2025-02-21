@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import theme from "../../constant/Constant";
 
 export default function LocationAndOfficeHour() {
   return (
@@ -15,6 +16,7 @@ export default function LocationAndOfficeHour() {
           <div className="flex gap-3 items-center">
             <div className="h-auto">
               <FontAwesomeIcon
+              style={{ color: theme } }
                 className="text-2xl text-[#3985C6]"
                 icon={faLocationPin}
               />
@@ -30,6 +32,7 @@ export default function LocationAndOfficeHour() {
           <div className="flex gap-3 items-center">
             <div className="h-auto">
               <FontAwesomeIcon
+               style={{ color: theme } }
                 className="text-2xl text-[#3985C6]"
                 icon={faCalendar}
               />

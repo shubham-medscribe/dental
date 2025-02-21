@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import theme from "../../constant/Constant";
 
 export default function CallUsBar() {
   const [mounted, setMounted] = useState(false);
@@ -36,6 +37,7 @@ export default function CallUsBar() {
         className="flex items-center"
       >
         <FontAwesomeIcon
+        style={{ color: theme }}
           icon={faPhone}
           className="text-orange-500 text-lg sm:text-xl"
         />
