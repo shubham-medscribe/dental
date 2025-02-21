@@ -24,7 +24,7 @@ export default function WhyDenatlImplant() {
       <div className="uppercase  font-bold py-2 text-xl lg:text-3xl text-center">
         <h1>🤔</h1>
       </div>
-      <div className="uppercase italic font-extrabold text-xl lg:text-3xl text-center">
+      <div className="uppercase  font-extrabold text-xl lg:text-3xl text-center">
         <h1>Why dental Implants ?</h1>
       </div>
       <div className="flex flex-col lg:flex-row w-full justify-center ">

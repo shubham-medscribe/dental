@@ -64,7 +64,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
               className="mt-4 flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-3"
             >
               <div className="w-full flex">
-                <label className="text-red-700 w-5 h-fit text-left">*</label>
+                <label className="text-red-700 w-fit lg:w-5 h-fit text-left">*</label>
                 <input
                   type="text"
                   placeholder="Your Name"
@@ -73,7 +73,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
                 />
               </div>
               <div className="w-full flex">
-                <label className="text-red-700 w-5 h-fit text-left">*</label>
+                <label className="text-red-700 w-fit lg:w-5 h-fit text-left">*</label>
                 <input
                   type="email"
                   placeholder="Your Email"

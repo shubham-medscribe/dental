@@ -11,7 +11,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
         <div className="w-full flex flex-col  p-5 justify-center  gap-3">
           <div className="w-full text-center lg:text-left text-2xl">💰</div>
-          <div className="italic font-bold text-2xl lg:text-3xl text-center lg:text-left">
+          <div className=" font-bold text-2xl lg:text-3xl text-center lg:text-left">
             Easy Dental Financing Made Simple
           </div>
           <p className="text-center text-lg lg:text-left">

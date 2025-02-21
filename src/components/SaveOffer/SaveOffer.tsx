@@ -45,7 +45,7 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
                 alt=""
               /> 
             </figure>
-            <span className="uppercase text-[13px] sm:text-xl italic md:not-italic">Save the Offer !</span>
+            <span className="uppercase text-[13px] sm:text-xl  ">Save the Offer !</span>
             <span className="text-lg text-[13px] sm:text-lg font-semibold md:font-normal md:text-xl">{`${formatTime(
               hours
             )}:${formatTime(minutes)}:${formatTime(seconds)}`}</span>
