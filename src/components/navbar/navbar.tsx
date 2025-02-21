@@ -24,6 +24,7 @@ export default function Navbar({ openPopForm }: Record<string, any>) {
         </div>
         <div>
           <button
+          style={{ backgroundColor: theme }}
             onClick={() => {
               openPopForm();
             }}

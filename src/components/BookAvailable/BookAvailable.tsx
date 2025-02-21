@@ -18,9 +18,10 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
               <p>Why Center for Implant Dentistry ?</p>
               <div>
                 <button
+               
                   onClick={() => openPopForm()}
                   type="button"
-                  className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+                  className="focus:outline-none text-white border border-white hover:bg-white hover:text-[#4CC1C4] transition-all duration-200  font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
                 >
                   Book Available Offers
                 </button>
@@ -82,6 +83,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
               </div>
               <button
                 type="submit"
+                style={{ backgroundColor: theme }}
                 className="px-6 py-3 font-semibold bg-orange-500 text-white rounded-xl hover:bg-orange-600 w-full"
               >
                 SUBSCRIBE
