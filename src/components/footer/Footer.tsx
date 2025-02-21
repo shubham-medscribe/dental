@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faGrinStars } from "@fortawesome/free-solid-svg-icons";
+import theme from "../../constant/Constant";
 export default function Footer({ openPopForm }: Record<string, any>) {
   const [todayIndex, setTodayIndex] = useState<number | null>(null);
   const days = [
@@ -44,7 +45,7 @@ export default function Footer({ openPopForm }: Record<string, any>) {
                   return (
                     <div
                       style={{
-                        color: index == todayIndex ? "#A9262D" : "white",
+                        color: index == todayIndex ? theme : "white",
                       }}
                       key={index}
                     >
@@ -58,7 +59,7 @@ export default function Footer({ openPopForm }: Record<string, any>) {
                   return (
                     <div
                       style={{
-                        color: index == todayIndex ? "#A9262D" : "white",
+                        color: index == todayIndex ? theme : "white",
                       }}
                       key={index}
                     >
