@@ -7,7 +7,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
   return (
     <div className="w-full flex flex-col items-center gap-5 bg-white rounded-3xl  px-5 py-5  max-w-[419px]">
       <div className="w-[263px]  sm:w-[290px] lg:w-[320px] xl:max-w-[380px] mr-[11.5%] sm:mr-[10%]">
-        <video autoPlay playsInline loop muted controls className="w-full rounded-2xl ">
+        <video autoPlay playsInline loop muted controls={false} className="w-full rounded-2xl ">
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
