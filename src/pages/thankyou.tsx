@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
+import theme from "../constant/Constant";
 
 export default function ThankYou() {
   const [showConfetti, setShowConfetti] = useState(true);
@@ -11,7 +12,7 @@ export default function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center p-6">
+    <div style={{backgroundColor:theme}} className="min-h-screen flex flex-col items-center justify-center  text-white text-center p-6">
       {showConfetti && <Confetti />}
 
       <motion.h1
@@ -40,7 +41,8 @@ export default function ThankYou() {
       >
         <a
           href="/"
-          className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg shadow-lg transition"
+        
+          className="border  text-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-[#4CC1C4] transition-all duration-200"
         >
           Back to Home
         </a>
