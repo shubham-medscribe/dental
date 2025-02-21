@@ -5,13 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         Rajdhani: ["Rajdhani"],
+        arial: ["Arial","sans-serif"],
       },
       backgroundColor: {
         primary: "#222323",
-      },
-      colors: {
-        primary: "#222323",
-        secondary: "#DE3431",
       },
       screens:{
         '3xl':'1920px'

@@ -1,5 +1,6 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import theme from "../../constant/Constant";
 
 function MainCard({ openPopForm }: Record<string, any>) {
   return (
@@ -15,7 +16,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
           <h2 className="font-bold text-[28px] lg:text-3xl">Dental Implants</h2>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <span className="text-[#153371] font-bold text-xl  lg:text-3xl">
+          <span style={{color:theme}} className="text-[#153371] font-bold text-xl  lg:text-3xl">
             $2,495
           </span>
           <span>(all-in)</span>
@@ -25,7 +26,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
           <div className="w-fit">
             <img src="https://redwoodcityimplantclinic.com/wp-content/plugins/constant-images-plugin/images/Line-10.svg" />
           </div>
-          <span className="text-[#153371] font-bold text-center text-[17px] w-fit lg:text-xl ">
+          <span style={{color:theme}} className="text-[#153371] font-bold text-center text-[17px] w-fit lg:text-xl ">
             Affordable Financing
           </span>
           <div className="w-fit">
@@ -34,7 +35,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
         </div>
 
         <div className="w-full flex gap-3 items-center py-1 justify-center">
-          <div className="text-[#153371] font-bold text-base  lg:text-sm">
+          <div style={{color:theme}} className="text-[#153371] font-bold text-base  lg:text-sm">
             1 Implant + Crown 73$/month
           </div>
         </div>
@@ -54,7 +55,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
         <div className="flex flex-col lg:flex-row lg:gap-3 justify-center items-center lg:text-base  py-1">
           <div className=" lg:flex gap-3 lg:flex-row justify-center">
             <div className="flex gap-3 w-25">
-              <div className="text-[#153371]">
+              <div style={{color:theme}} className="text-[#153371]">
                 <FontAwesomeIcon icon={faCheckCircle} />
               </div>
               <div>
@@ -63,7 +64,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
             </div>
 
             <div className="flex gap-3 w-25">
-              <div className="text-[#153371]">
+              <div style={{color:theme}} className="text-[#153371]">
                 <FontAwesomeIcon icon={faCheckCircle} />
               </div>
               <div>

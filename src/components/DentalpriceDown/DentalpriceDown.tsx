@@ -1,23 +1,7 @@
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import useNavigateToContact from "../../hook/navToContact";
+import Info from "../../info.json";
 
 export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
-  const arr = [
-    "Permanent solution",
-    "Improved chewing and speaking",
-    "Natural function and look",
-    "Improved facial appearance",
-    "Prevention of bone loss",
-    "No special care required",
-  ];
-
-  const arr2 = [
-    "Very sturdy and secure",
-    "No diet restrictions",
-    "Can be changed or updated",
-  ];
   return (
     <div className="w-full flex flex-col justify-center items-center bg-[#F9FAFF] py-10">
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
@@ -25,7 +9,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
           <div className="">
             <h1 className="uppercase text-3xl  font-extrabold my-4 text-center lg:text-left italic">
               {" "}
-              Dental implant  <br className="md:block hidden"/> price break down
+              Dental implant <br className="md:block hidden" /> price break down
             </h1>
             <div className=" flex justify-center lg:justify-start">
               <button
@@ -98,92 +82,59 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
         </div>
       </div>
 
+      {/*  Dentist showCase */}
       <div className="w-full flex flex-col  justify-center max-w-screen-xl pt-10">
         <div className="uppercase  font-bold py-2 text-xl lg:text-3xl text-center">
           <h1>🤔</h1>
         </div>
         <div className="uppercase italic font-extrabold text-xl lg:text-3xl text-center">
-          <h1>Why dental Implants ?</h1>
+          <h1>Dentist showcases</h1>
         </div>
-        <div className="flex flex-col lg:flex-row w-full justify-center gap-10 mt-8">
-          <div className="w-full lg:w-96 justify-center items-center bg-white p-5 rounded-lg">
-            <div className="w-full flex flex-col items-center bg-white p-5">
-              <div className="w-fit">
-                <figure className="w-fit ">
-                  <img
-                    className="w-full h-auto"
-                    src="https://fremontimplantclinic.com/wp-content/uploads/2024/07/Mask-group-2-1.png"
-                    alt=""
-                  />
-                </figure>
-              </div>
-              <div className="flex gap-3 py-3">
-                <div className="h-auto">
-                  <figure>
-                    <img
-                      className="h-auto"
-                      src="https://redwoodcityimplantclinic.com/wp-content/uploads/2024/07/icon-park-solid_gold-medal-2.svg"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <div className="flex flex-col">
-                  <p className="font-semibold">
-                    Fremont & CA's Top Permanent Teeth Specialist
-                  </p>
-                  <div className="flex flex-col gap-2  mt-3">
-                    <span className="font-bold text-xl">Dr. Sambhav Jain</span>
-                    <span className="text-xl">DENTIST</span>
+        {Info.dentist.map((key, i) => (
+          <React.Fragment key={i}>
+            <div className="flex flex-col lg:flex-row w-full justify-center gap-10 mt-8">
+              <div className="w-full lg:w-96 justify-center items-center bg-white p-5 rounded-lg">
+                <div className="w-full flex flex-col items-center bg-white p-5">
+                  <div className="w-fit">
+                    <figure className="w-fit ">
+                      <img
+                        className="w-full h-auto"
+                        src="https://fremontimplantclinic.com/wp-content/uploads/2024/07/Mask-group-2-1.png"
+                        alt=""
+                      />
+                    </figure>
+                  </div>
+                  <div className="flex gap-3 py-3">
+                    <div className="h-auto">
+                      <figure>
+                        <img
+                          className="h-auto"
+                          src="https://redwoodcityimplantclinic.com/wp-content/uploads/2024/07/icon-park-solid_gold-medal-2.svg"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="font-semibold">{key.position}</p>
+                      <div className="flex flex-col gap-2  mt-3">
+                        <span className="font-bold text-xl">{key.name}</span>
+                        <span className="text-xl">{key.proffession}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className="h-auto flex  items-center justify-center">
-            <div className="w-fit  p-5 flex flex-col lg:flex-row justify-center gap-0 lg:gap-10">
-              <div className="w-fit flex justify-center">
-                <div>
-                  {arr.map((item, index) => (
-                    <div key={index} className=" flex gap-3">
-                      <div>
-                        <FontAwesomeIcon
-                          className="text-[#153371]"
-                          icon={faCheckCircle}
-                        />
-                      </div>
-                      <div>
-                        <p className="font-medium sm:text-xl lg:text-xl">
-                          {item}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="w-fit flex justify-center">
-                <div>
-                  {arr2.map((item, index) => (
-                    <div key={index} className=" flex gap-3">
-                      <div>
-                        <FontAwesomeIcon
-                          className="text-[#153371]"
-                          icon={faCheckCircle}
-                        />
-                      </div>
-                      <div>
-                        <p className="font-medium sm:text-xl lg:text-xl">
-                          {item}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+              <div className="w-full h-auto flex  items-center justify-center">
+                <div className="w-fit  p-5 flex flex-col  justify-center gap-2">
+                  {key.information.map((desc: string) => {
+                    return <p>{desc}</p>;
+                  })}
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );

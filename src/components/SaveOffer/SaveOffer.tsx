@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import useNavigateToContact from "../../hook/navToContact";
 import MainCard from "../MainCard/MainCard";
+import theme from "../../constant/Constant";
 
 export default function SaveOffer({ openPopForm }: Record<string, any>) {
   const [hours, setHours] = useState<number>(48);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
-  const navigateToContact = useNavigateToContact();
+ 
   useEffect(() => {
     if (hours === 0 && minutes === 0 && seconds === 0) return;
 
@@ -33,7 +34,7 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
 
   const formatTime = (num: number) => num.toString().padStart(2, "0");
   return (
-    <div className="w-full h-fit flex justify-center bg-[#153371] py-3 lg:py-16 ">
+    <div style={{backgroundColor:theme}} className="w-full h-fit flex justify-center bg-[#153371] py-3 lg:py-16 ">
       <div className="flex flex-col md:flex-row max-w-screen-xl items-center justify-center w-full sm:gap-6">
         <div className="flex-1 flex flex-col items-center md:items-start justify-center px-5 py-5 gap-5 md:gap-6">
           <div className="bg-gradient-to-r from-[#D31717] to-[#FE4141] rounded-xl w-fit flex max-w-sm text-center items-center lg:text-left bg-opacity-70 text-white space-x-3 py-2 md:py-1 px-2 sm:px-3 lg:px-5   font-bold lg:font-normal">
@@ -42,7 +43,7 @@ export default function SaveOffer({ openPopForm }: Record<string, any>) {
                 className="h-auto"
                 src="https://redwoodcityimplantclinic.com/wp-content/uploads/2024/08/bxs_offer-1.svg"
                 alt=""
-              />
+              /> 
             </figure>
             <span className="uppercase text-[13px] sm:text-xl italic md:not-italic">Save the Offer !</span>
             <span className="text-lg text-[13px] sm:text-lg font-semibold md:font-normal md:text-xl">{`${formatTime(
