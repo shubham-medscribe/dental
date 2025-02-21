@@ -1,6 +1,6 @@
 import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
-import theme from "../constant/Constant";
+import theme from "../../constant/Constant";
 
 export default function BookAvailable({ openPopForm }: Record<string, any>) {
   const [ispecial, setIspecial] = React.useState(false);

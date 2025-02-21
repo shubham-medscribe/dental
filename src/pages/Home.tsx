@@ -10,22 +10,25 @@ import Navbar from "../components/navbar/navbar";
 import ReviewSlider from "../components/reviewSlider/reviewSlider";
 import PopFor from "../components/popForm/PopFor";
 import CallUsBar from "../components/CallUsBar/CallUsbar";
+import WhyDenatlImplant from "../components/whyDenatlImplant/whyDenatlImplant";
 
 export default function Home() {
   const [open, setClose] = useState<boolean>(false);
   return (
-    <div className="w-full">
-      <CallUsBar/>
-      {open && <PopFor closePopForm={() => setClose(false)}/>}
+    <div className="w-full font-arial">
+      <CallUsBar />
+      {open && <PopFor closePopForm={() => setClose(false)} />}
       <Navbar openPopForm={() => setClose(true)} />
       <LocationAndOfficeHour />
       <SaveOffer openPopForm={() => setClose(true)} />
       <ReviewSlider />
       <DentalpriceDown openPopForm={() => setClose(true)} />
+
       <EasyDental openPopForm={() => setClose(true)} />
-      <FAQ openPopForm={() => setClose(true)}/>
+      <WhyDenatlImplant />
+      <FAQ openPopForm={() => setClose(true)} />
       <BookAvailable openPopForm={() => setClose(true)} />
-      <Footer openPopForm={() => setClose(true)}/>
+      <Footer openPopForm={() => setClose(true)} />
     </div>
   );
 }

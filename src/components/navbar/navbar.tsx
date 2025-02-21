@@ -6,10 +6,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import theme from "../constant/Constant";
-
+import theme from "../../constant/Constant";
+import Logo from "../../assests/logo.png"
 export default function Navbar({ openPopForm }: Record<string, any>) {
-  const navigate = useNavigate();
 
   return (
     <div className="w-full flex justify-center items-center py-5 shadow-lg px-5 lg:px-0">
@@ -17,8 +16,9 @@ export default function Navbar({ openPopForm }: Record<string, any>) {
         <div>
           <figure>
             <img
-              className="w-44 sm:w-60 h-auto object-cover object-center"
-              src="https://bayareaimplantdentistry.com/wp-content/uploads/2019/09/logo.png"
+              className="w-44 sm:w-fit h-auto object-cover object-center"
+              src={Logo}
+              alt="logo"
             />
           </figure>
         </div>
