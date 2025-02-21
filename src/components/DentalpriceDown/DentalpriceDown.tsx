@@ -8,7 +8,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
         <div className="flex flex-col items-center justify-center w-full">
           <div className="">
-            <h1 className="uppercase text-3xl  font-extrabold my-4 text-center lg:text-left italic">
+            <h1 className="uppercase text-3xl  font-extrabold my-4 text-center lg:text-left ">
               {" "}
               Dental implant <br className="md:block hidden" /> price break down
             </h1>
@@ -89,7 +89,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
         <div className="uppercase  font-bold py-2 text-xl lg:text-3xl text-center">
           <h1>{"😊"}</h1>
         </div>
-        <div className="uppercase italic font-extrabold text-xl lg:text-3xl text-center">
+        <div className="uppercase  font-extrabold text-xl lg:text-3xl text-center">
           <h1>Meet the Dentists</h1>
         </div>
         {Info.dentist.map((key, i) => (
