@@ -1,5 +1,5 @@
 import React from "react";
-import Info from "../../info.json";
+import Info from "../../constant/dentist_info";
 
 export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
   return (
@@ -85,40 +85,36 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
       {/*  Dentist showCase */}
       <div className="w-full flex flex-col  justify-center max-w-screen-xl pt-10">
         <div className="uppercase  font-bold py-2 text-xl lg:text-3xl text-center">
-          <h1>🤔</h1>
+          <h1>{"😊"}</h1>
         </div>
         <div className="uppercase italic font-extrabold text-xl lg:text-3xl text-center">
-          <h1>Dentist showcases</h1>
+          <h1>Meet the Dentists</h1>
         </div>
         {Info.dentist.map((key, i) => (
           <React.Fragment key={i}>
-            <div className="flex flex-col lg:flex-row w-full justify-center gap-10 mt-8">
+            <div className="flex flex-col lg:flex-row w-full justify-center lg:gap-10 mt-8">
               <div className="w-full lg:w-96 justify-center items-center bg-white p-5 rounded-lg">
                 <div className="w-full flex flex-col items-center bg-white p-5">
                   <div className="w-fit">
                     <figure className="w-fit ">
-                      <img
-                        className="w-full h-auto"
-                        src="https://fremontimplantclinic.com/wp-content/uploads/2024/07/Mask-group-2-1.png"
-                        alt=""
-                      />
+                      <img className="sm:w-[539px] sm:h-[472px] lg:w-[214px] lg:h-[187px] rounded-3xl object-cover object-center" src={key.img} alt="" />
                     </figure>
                   </div>
                   <div className="flex gap-3 py-3">
-                    <div className="h-auto">
-                      <figure>
+                    <div className="w-fit">
+                      <figure className="w-[28px]">
                         <img
-                          className="h-auto"
+                          className=" h-auto"
                           src="https://redwoodcityimplantclinic.com/wp-content/uploads/2024/07/icon-park-solid_gold-medal-2.svg"
                           alt=""
                         />
                       </figure>
                     </div>
                     <div className="flex flex-col">
-                      <p className="font-semibold">{key.position}</p>
+                      <p className="font-semibold  xl:text-[16px]">{key.position}</p>
                       <div className="flex flex-col gap-2  mt-3">
                         <span className="font-bold text-xl">{key.name}</span>
-                        <span className="text-xl">{key.proffession}</span>
+                        <span className="text-xl">{key.profession}</span>
                       </div>
                     </div>
                   </div>
@@ -126,7 +122,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
               </div>
 
               <div className="w-full h-auto flex  items-center justify-center">
-                <div className="w-fit  p-5 flex flex-col  justify-center gap-2">
+                <div className="w-fit  p-5 flex flex-col gap-5 h-full xl:text-[17px]">
                   {key.information.map((desc: string) => {
                     return <p>{desc}</p>;
                   })}
