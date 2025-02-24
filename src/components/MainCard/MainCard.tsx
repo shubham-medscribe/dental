@@ -93,7 +93,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
           </div>
           <div>
             <p className="md:px-11 text-[11px] text-center">
-              Pricing may vary if you need additional procedures and start above
+              *Pricing may vary if you need additional procedures and start above
               the pricing also mention in the banner section as well.
             </p>
           </div>
