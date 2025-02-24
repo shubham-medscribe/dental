@@ -1,6 +1,8 @@
 import React from "react";
 import Info from "../../constant/dentist_info";
 import theme from "../../constant/Constant";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
   return (
@@ -14,7 +16,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             </h1>
             <div className=" flex justify-center lg:justify-start">
               <button
-              style={{ backgroundColor: theme }}
+                style={{ backgroundColor: theme }}
                 onClick={() => openPopForm(true)}
                 type="button"
                 className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
@@ -27,58 +29,95 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
 
         <div className="flex flex-col lg:gap-8  w-full p-5 shadow-lg rounded-lg lg:shadow-none">
           <div className="flex flex-col lg:gap-10  lg:flex-row items-center justify-center">
-            <div className="bg-white w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg lg:flex items-center flex-col justify-center">
-              <h2 style={{color: theme }} className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-full">
-                Free
+            <div className="bg-white w-full rounded-lg p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
+              <h2
+                style={{ color: theme }}
+                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+              >
+                <FontAwesomeIcon icon={faCheckCircle} />
               </h2>
-              <h2 className=" font-bold text-xl  text-center lg:text-left w-full">
-                Consultation
+              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+                Implant Consultation
               </h2>
-              <p className="text-center font-medium py-1 lg:text-left">
-                Includes Treatment Plan, Limited Time Offer
-              </p>
+              {/*  <p className="text-center font-medium py-1 lg:text-left">
+                Cutting Edge Computer Guided Technology
+              </p> */}
             </div>
 
-            <div className="bg-[#FFFBF5] w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center flex-col justify-center">
-              <h2 className=" font-bold text-xl  text-center lg:text-left w-full">
-                1 Implant
+            <div className="bg-[#FFFBF5] w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
+              <h2
+                style={{ color: theme }}
+                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+              >
+                <FontAwesomeIcon icon={faCheckCircle} />
               </h2>
-              <p className="text-center font-medium py-1 lg:text-left">
+              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+                Cone-Beam CT Scan
+              </h2>
+              {/*  <p className="text-center font-medium py-1 lg:text-left">
                 Implant Placement Only. Includes Full Mouth X-Ray
-              </p>
+              </p> */}
             </div>
           </div>
 
           <div className="bg-white rounded-lg flex flex-col lg:gap-10  lg:flex-row items-center justify-center">
-            <div className="rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg lg:flex items-center flex-col justify-center">
-              <h2 className=" font-bold text-xl  text-center lg:text-left w-full">
-                Crown
+            <div className="rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg lg:flex items-center gap-3 justify-center">
+              <h2
+                style={{ color: theme }}
+                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+              >
+                <FontAwesomeIcon icon={faCheckCircle} />
               </h2>
-              <p className="text-center font-medium py-1 lg:text-left">
+              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+                Implant
+              </h2>
+              {/*  <p className="text-center font-medium py-1 lg:text-left">
                 Same Day In-House Lab Dental Crown
-              </p>
+              </p> */}
             </div>
 
-            <div className="bg-white w-full rounded-lg p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center flex-col justify-center">
-              <h2 className=" font-bold text-xl  text-center lg:text-left w-full">
-                Implant Abutment
+            <div className="bg-white w-full rounded-lg p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
+              <h2
+                style={{ color: theme }}
+                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+              >
+                <FontAwesomeIcon icon={faCheckCircle} />
               </h2>
-              <p className="text-center font-medium py-1 lg:text-left">
+              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+                Stock Abutment
+              </h2>
+              {/*  <p className="text-center font-medium py-1 lg:text-left">
                 Cutting Edge Computer Guided Technology
-              </p>
+              </p> */}
             </div>
           </div>
 
-          <div className="bg-white w-full p-5 lg:shadow-lg rounded-lg space-y-1">
-            <h2 style={{color:theme}} className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left">
+          <div className="bg-white py-8 w-full p-5 lg:shadow-lg flex items-center  gap-3 rounded-lg space-y-1">
+            <h2
+              style={{ color: theme }}
+              className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+            >
+              <FontAwesomeIcon icon={faCheckCircle} />
+            </h2>
+            {/* <h2
+              style={{ color: theme }}
+              className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left"
+            >
               $2,495
+            </h2> */}
+            <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+              Digitally Designed Implant Zirconia Crown
             </h2>
-            <h2 className=" font-bold text-xl  text-center lg:text-left">
-              Total
-            </h2>
-            <p className="text-center lg:text-left font-medium py-1">
+            {/* <p className="text-center lg:text-left font-medium py-1">
               Our clinic uses the latest advances in dental implant procedures
               in order ensure superior lifelong results
+            </p> */}
+          </div>
+
+          <div className=" w-full px-5  flex flex-col items-center  rounded-lg ">
+            <p className="text-center text-sm lg:text-left font-medium py-1">
+              Pricing may vary if you need additional procedures and start above
+              the pricing also mention in the banner section as well.
             </p>
           </div>
         </div>
@@ -99,7 +138,11 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
                 <div className="w-full flex flex-col items-center bg-white p-5">
                   <div className="w-fit">
                     <figure className="w-fit ">
-                      <img className="sm:w-[539px] sm:h-[472px] lg:w-[214px] lg:h-[187px] rounded-3xl object-cover object-center" src={key.img} alt="" />
+                      <img
+                        className="sm:w-[539px] sm:h-[472px] lg:w-[214px] lg:h-[187px] rounded-3xl object-cover object-center"
+                        src={key.img}
+                        alt=""
+                      />
                     </figure>
                   </div>
                   <div className="flex gap-3 py-3">
@@ -113,7 +156,9 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
                       </figure>
                     </div>
                     <div className="flex flex-col">
-                      <p className="font-semibold  xl:text-[16px]">{key.position}</p>
+                      <p className="font-semibold  xl:text-[16px]">
+                        {key.position}
+                      </p>
                       <div className="flex flex-col gap-2  mt-3">
                         <span className="font-bold text-xl">{key.name}</span>
                         <span className="text-xl">{key.profession}</span>
