@@ -116,7 +116,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
 
           <div className=" w-full px-5  flex flex-col items-center  rounded-lg ">
             <p className="text-center text-sm lg:text-left font-medium py-1">
-              Pricing may vary if you need additional procedures and start above
+              *Pricing may vary if you need additional procedures and start above
               the pricing also mention in the banner section as well.
             </p>
           </div>
