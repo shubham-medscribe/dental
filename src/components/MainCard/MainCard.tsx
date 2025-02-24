@@ -1,13 +1,20 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Video from "../../assests/implant.mp4"
+import Video from "../../assests/implant.mp4";
 import theme from "../../constant/Constant";
 
 function MainCard({ openPopForm }: Record<string, any>) {
   return (
     <div className="w-full flex flex-col items-center gap-5 bg-white rounded-3xl  px-5 py-5  max-w-[419px]">
       <div className="w-[263px]  sm:w-[290px] lg:w-[320px] xl:max-w-[380px] mr-[11.5%] sm:mr-[10%]">
-        <video autoPlay playsInline loop muted controls={false} className="w-full rounded-2xl ">
+        <video
+          autoPlay
+          playsInline
+          loop
+          muted
+          controls={false}
+          className="w-full rounded-2xl "
+        >
           <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -21,7 +28,7 @@ function MainCard({ openPopForm }: Record<string, any>) {
             style={{ color: theme }}
             className="text-[#153371] font-bold text-xl  lg:text-3xl"
           >
-            $2,495
+            $2,495*
           </span>
           <span>(all-in)</span>
         </div>
@@ -62,26 +69,33 @@ function MainCard({ openPopForm }: Record<string, any>) {
             Free Consultation
           </button>
         </div>
-
-        <div className="flex flex-col lg:flex-row lg:gap-3 justify-center items-center lg:text-base  py-1">
-          <div className=" lg:flex gap-3 lg:flex-row justify-center">
-            <div className="flex gap-3 w-25">
-              <div style={{ color: theme }} className="text-[#153371]">
-                <FontAwesomeIcon icon={faCheckCircle} />
+        <div className="space-y-1">
+          <div className="flex flex-col lg:flex-row lg:gap-3 justify-center items-center lg:text-base  py-1">
+            <div className=" lg:flex gap-3 lg:flex-row justify-center">
+              <div className="flex gap-3 w-25">
+                <div style={{ color: theme }} className="text-[#153371]">
+                  <FontAwesomeIcon icon={faCheckCircle} />
+                </div>
+                <div>
+                  <p>Zero Down Payment</p>
+                </div>
               </div>
-              <div>
-                <p>Zero Down Payment</p>
+
+              <div className="flex gap-3 w-25">
+                <div style={{ color: theme }} className="text-[#153371]">
+                  <FontAwesomeIcon icon={faCheckCircle} />
+                </div>
+                <div>
+                  <p>48 Months</p>
+                </div>
               </div>
             </div>
-
-            <div className="flex gap-3 w-25">
-              <div style={{ color: theme }} className="text-[#153371]">
-                <FontAwesomeIcon icon={faCheckCircle} />
-              </div>
-              <div>
-                <p>48 Months</p>
-              </div>
-            </div>
+          </div>
+          <div>
+            <p className="md:px-11 text-[11px] text-center">
+              Pricing may vary if you need additional procedures and start above
+              the pricing also mention in the banner section as well.
+            </p>
           </div>
         </div>
       </div>
