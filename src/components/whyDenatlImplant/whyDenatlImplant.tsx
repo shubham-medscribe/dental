@@ -34,7 +34,7 @@ export default function WhyDenatlImplant() {
               <div>
                 {arr.map((item, index) => (
                   <div key={index} className=" flex gap-3">
-                    <div>
+                    <div className="flex items-center">
                       <FontAwesomeIcon
                       style={{color:theme}}
                         className="text-[#153371]"
@@ -55,7 +55,7 @@ export default function WhyDenatlImplant() {
               <div>
                 {arr2.map((item, index) => (
                   <div key={index} className=" flex gap-3">
-                    <div>
+                    <div className="flex items-center">
                       <FontAwesomeIcon
                        style={{color:theme}}
                         className="text-[#153371]"
