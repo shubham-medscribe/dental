@@ -15,12 +15,12 @@ export default function Footer({ openPopForm }: Record<string, any>) {
   ];
 
   const times = [
-    "9:00 am - 5:00 pm",
-    "9:00 am - 5:00 pm",
-    "9:00 am - 5:00 pm",
-    "9:00 am - 5:00 pm",
-    "9:00 am - 5:00 pm",
-    "9:00 am - 5:00 pm",
+    "9:00 am - 7:00 pm",
+    "9:00 am - 7:00 pm",
+    "9:00 am - 7:00 pm",
+    "9:00 am - 7:00 pm",
+    "9:00 am - 7:00 pm",
+    "By Appointment Only",
     "Closed",
   ];
 
