@@ -20,7 +20,7 @@ export default function Footer({ openPopForm }: Record<string, any>) {
     "9:00 am - 7:00 pm",
     "9:00 am - 7:00 pm",
     "9:00 am - 7:00 pm",
-    "By appointment only",
+    "By Appointment Only",
     "Closed",
   ];
 
