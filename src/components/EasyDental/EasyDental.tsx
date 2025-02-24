@@ -7,7 +7,7 @@ import theme from "../../constant/Constant";
 export default function EasyDental({ openPopForm }: Record<string, any>) {
   const navigateToContact = useNavigateToContact();
   return (
-    <div className="flex justify-center py-16">
+    <div className="flex justify-center  lg:pt-16">
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
         <div className="w-full flex flex-col  p-5 justify-center  gap-3">
           <div className="w-full text-center lg:text-left text-2xl">💰</div>
@@ -20,7 +20,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
           </p>
           <div className="hidden lg:block">
             <button
-            style={{ backgroundColor: theme }}
+              style={{ backgroundColor: theme }}
               onClick={() => openPopForm()}
               type="button"
               className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
@@ -34,6 +34,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
             <div className="w-full rounded-md bg-[#F9FAFF] flex gap-3 items-center border border-gray-100">
               <div className="p-3">
                 <FontAwesomeIcon
+                  style={{ color: theme }}
                   className="text-[#34A853]"
                   icon={faCheckCircle}
                 />
@@ -45,6 +46,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
             <div className="w-full rounded-md bg-[#F9FAFF] flex gap-3 items-center border border-gray-100">
               <div className="p-3">
                 <FontAwesomeIcon
+                  style={{ color: theme }}
                   className="text-[#34A853]"
                   icon={faCheckCircle}
                 />
@@ -59,6 +61,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
             <div className="w-full rounded-md bg-[#F9FAFF] flex gap-3 items-center border border-gray-100">
               <div className="p-3">
                 <FontAwesomeIcon
+                  style={{ color: theme }}
                   className="text-[#34A853]"
                   icon={faCheckCircle}
                 />
@@ -70,6 +73,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
             <div className="w-full rounded-md bg-[#F9FAFF] flex gap-3 items-center border border-gray-100">
               <div className="p-3">
                 <FontAwesomeIcon
+                  style={{ color: theme }}
                   className="text-[#34A853]"
                   icon={faCheckCircle}
                 />
@@ -84,6 +88,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
             <div className="w-full rounded-md bg-[#F9FAFF] flex gap-3 items-center border border-gray-100">
               <div className="p-3">
                 <FontAwesomeIcon
+                  style={{ color: theme }}
                   className="text-[#34A853]"
                   icon={faCheckCircle}
                 />
@@ -95,6 +100,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
             <div className="w-full rounded-md bg-[#F9FAFF] flex gap-3 items-center border border-gray-100">
               <div className="p-3">
                 <FontAwesomeIcon
+                  style={{ color: theme }}
                   className="text-[#34A853]"
                   icon={faCheckCircle}
                 />
@@ -106,9 +112,9 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
           </div>
         </div>
 
-        <div className="lg:hidden py-10">
+        <div className="lg:hidden pt-5 lg:pt-0 lg:py-10">
           <button
-          style={{ backgroundColor: theme }}
+            style={{ backgroundColor: theme }}
             onClick={() => openPopForm(true)}
             type="button"
             className="focus:outline-none text-white bg-[#FEAC34] hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xl px-12 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"

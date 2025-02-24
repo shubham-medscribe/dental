@@ -29,7 +29,7 @@ export default function WhyDenatlImplant() {
       </div>
       <div className="flex flex-col lg:flex-row w-full justify-center ">
         <div className="h-auto flex  items-center justify-center">
-          <div className="w-fit  p-5 flex flex-col lg:flex-row justify-center gap-0 lg:gap-16">
+          <div className="w-fit  p-5 flex flex-col sm:flex-row justify-center gap-0 sm:gap-5 lg:gap-16">
             <div className="w-fit flex justify-center">
               <div>
                 {arr.map((item, index) => (
@@ -42,7 +42,7 @@ export default function WhyDenatlImplant() {
                       />
                     </div>
                     <div>
-                      <p className="font-medium sm:text-xl lg:text-xl">
+                      <p className="font-medium text-xl lg:text-xl">
                         {item}
                       </p>
                     </div>
@@ -63,7 +63,7 @@ export default function WhyDenatlImplant() {
                       />
                     </div>
                     <div>
-                      <p className="font-medium sm:text-xl lg:text-xl">
+                      <p className="font-medium text-xl lg:text-xl">
                         {item}
                       </p>
                     </div>

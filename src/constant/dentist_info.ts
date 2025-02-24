@@ -13,7 +13,7 @@ const dentists = {
         "When she is not working, Dr. Gupta enjoys dancing, traveling, and spending quality time with her beloved family. She and Dr. Jain are married with two children, Gauri, and Paras.",
       ],
     },
-    {
+    /* {
       name: "Dr. Sambhav (Sam) Jain",
       position: "DMD, Implant Surgeon, MS Mechanical Engineer",
       img: DrSambhavJain,
@@ -23,7 +23,7 @@ const dentists = {
         "Dr. Jain was honored with the Health Leadership Award from Franklin County for his work with the underprivileged in his role as the dental director for the Community Health Center of Franklin County, MA. He chose to focus on implant dentistry because it fulfills his need to help others live a healthy and pain-free life. Furthermore, his background in mechanical engineering gives him a better understanding of the various aspects of dental implantology and the natural oral structure.",
         "With an extensive background in mechanical engineering and CAD/CAM technology, Dr. Jain has developed a state-of-the-art Dental CAD/CAM milling center in which dental implant prosthetics can be made on-site. The addition of this on-site milling center makes us the most advanced dental implant center in the Entire State of California.",
       ],
-    },
+    }, */
   ],
 };
 
