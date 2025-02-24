@@ -26,8 +26,14 @@ export default function Footer({ openPopForm }: Record<string, any>) {
 
   useEffect(() => {
     const getTodayIndex = () => {
-      const index = new Date().getDay();
-      return index === 0 ? 6 : index - 1; // Adjusting to match our array (Monday = 0)
+      const today = new Date().toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles",
+      });
+      const dayIndex = new Date(today).getDay();
+
+      console.log("Today's date:", new Date(today).getDate()); // Debugging
+
+      return dayIndex === 0 ? 6 : dayIndex - 1; // Sunday (0) becomes 6, others shift back by 1
     };
 
     setTodayIndex(getTodayIndex());
@@ -174,7 +180,16 @@ export default function Footer({ openPopForm }: Record<string, any>) {
           <div>
             <p className="text-sm py-3 lg:max-w-[300px]">
               Above Fees may vary depending on specific needs of the patient.
-              Come in for a <a onClick={()=>{openPopForm()}} className="underline cursor-pointer">free consultation</a>.
+              Come in for a{" "}
+              <a
+                onClick={() => {
+                  openPopForm();
+                }}
+                className="underline cursor-pointer"
+              >
+                free consultation
+              </a>
+              .
             </p>
           </div>
         </div>

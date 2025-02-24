@@ -7,24 +7,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import theme from "../../constant/Constant";
-import Logo from "../../assests/logo.png"
+import Logo from "../../assests/logo.png";
 export default function Navbar({ openPopForm }: Record<string, any>) {
-
   return (
     <div className="w-full flex justify-center items-center py-5 shadow-lg px-5 lg:px-0">
       <div className="w-full flex items-center justify-between lg:w-[1280px]">
         <div>
           <figure>
             <img
-              className="w-44 sm:w-fit h-auto object-cover object-center"
+              className="w-52 sm:w-fit h-auto object-cover object-center"
               src={Logo}
               alt="logo"
+              loading="lazy"
+              style={{ imageRendering: "auto" }} // Ensures smooth rendering
             />
           </figure>
         </div>
         <div>
           <button
-          style={{ backgroundColor: theme }}
+            style={{ backgroundColor: theme }}
             onClick={() => {
               openPopForm();
             }}
