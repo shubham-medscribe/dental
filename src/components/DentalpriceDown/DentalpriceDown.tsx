@@ -61,7 +61,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
           </div>
 
           <div className="bg-white rounded-lg flex flex-col lg:gap-10  lg:flex-row items-center justify-center">
-            <div className="rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg lg:flex items-center gap-3 justify-center">
+            <div className="rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
                 className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"

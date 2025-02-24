@@ -9,12 +9,12 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
   return (
     <div
       style={{ backgroundColor: theme }}
-      className="w-full  flex justify-center px-5 py-36 relative"
+      className="w-full  flex justify-center px-5 pt-10 lg:pt-36 pb-36 relative"
     >
-      <div className="flex flex-col lg:flex-row justify-center max-w-7xl gap-10 p-5">
-        <div className="text-white min-w-80">
+      <div className="flex flex-col xl:flex-row justify-center max-w-7xl lg:gap-3 xl:gap-10 p-5">
+        <div className="text-white min-w-80 lg:min-w-96">
           <div className="flex flex-col lg:flex-row">
-            <div className="space-y-5 text-2xl">
+            <div className="space-y-5 text-xl sm:text-2xl">
               <p>Why Center for Implant Dentistry ?</p>
               <div>
                 <button
