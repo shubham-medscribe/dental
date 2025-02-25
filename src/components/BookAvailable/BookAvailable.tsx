@@ -4,19 +4,18 @@ import theme from "../../constant/Constant";
 
 export default function BookAvailable({ openPopForm }: Record<string, any>) {
   const [ispecial, setIspecial] = React.useState(false);
-  const [isBooked, setBooked] = React.useState(true);
-  const navigateToContact = useNavigateToContact();
+ 
   return (
     <div
       style={{ backgroundColor: theme }}
-      className="w-full  flex justify-center px-5 pt-10 lg:pt-36 pb-36 relative"
+      className="w-full  flex justify-center lg:px-5 pt-10 lg:pt-36 pb-36 relative"
     >
-      <div className="flex flex-col xl:flex-row justify-center max-w-7xl lg:gap-3 xl:gap-10 p-5">
+      <div className="flex flex-col xl:flex-row justify-center max-w-7xl lg:gap-3 xl:gap-10  px-3 sm:px-5">
         <div className="text-white min-w-80 lg:min-w-96">
           <div className="flex flex-col lg:flex-row">
-            <div className="space-y-5 text-xl sm:text-2xl">
+            <div className="space-y-5 text-center lg:text-left text-xl sm:text-2xl">
               <p>Why Center for Implant Dentistry ?</p>
-              <div>
+              <div className="flex justify-center lg:justify-start">
                 <button
                
                   onClick={() => openPopForm()}
@@ -29,7 +28,7 @@ export default function BookAvailable({ openPopForm }: Record<string, any>) {
             </div>
           </div>
         </div>
-        <div className=" flex justify-center text-white font-semibold text-lg  py-5 lg:py-0">
+        <div className="text-center flex justify-center lg:justify-start lg:text-left text-white font-semibold text-lg  py-5 lg:py-0">
           <p>
             At Fremont Center for Implant Dentistry, we set a new standard in
             dental implant care by blending advanced technology with

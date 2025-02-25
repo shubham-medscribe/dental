@@ -1,4 +1,4 @@
-import { faCheck, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import useNavigateToContact from "../../hook/navToContact";
@@ -10,8 +10,9 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
     <div className="flex justify-center  lg:pt-16">
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
         <div className="w-full flex flex-col  p-5 justify-center  gap-3">
-          <div className="w-full text-center lg:text-left text-2xl">💰</div>
-          <div className=" font-bold text-2xl lg:text-3xl text-center lg:text-left">
+        
+          <div className="flex gap-3 justify-center items-center lg:justify-start font-bold text-2xl lg:text-3xl text-center lg:text-left">
+          <div className="w-fit text-center lg:text-left text-2xl">💰</div>
             Easy Dental Financing Made Simple
           </div>
           <p className="text-center text-lg lg:text-left">
@@ -35,8 +36,8 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
               <div className="p-3">
                 <FontAwesomeIcon
                   style={{ color: theme }}
-                  className="text-[#34A853]"
-                  icon={faCheckCircle}
+                  className="text-[#34A853] text-3xl"
+                  icon={faCheck}
                 />
               </div>
               <div className="text-base font-medium">
@@ -47,8 +48,8 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
               <div className="p-3">
                 <FontAwesomeIcon
                   style={{ color: theme }}
-                  className="text-[#34A853]"
-                  icon={faCheckCircle}
+                  className="text-[#34A853] text-3xl"
+                  icon={faCheck}
                 />
               </div>
               <div className="text-base font-medium">
@@ -62,8 +63,8 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
               <div className="p-3">
                 <FontAwesomeIcon
                   style={{ color: theme }}
-                  className="text-[#34A853]"
-                  icon={faCheckCircle}
+                  className="text-[#34A853] text-3xl"
+                  icon={faCheck}
                 />
               </div>
               <div className="text-base font-medium">
@@ -74,8 +75,8 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
               <div className="p-3">
                 <FontAwesomeIcon
                   style={{ color: theme }}
-                  className="text-[#34A853]"
-                  icon={faCheckCircle}
+                  className="text-[#34A853] text-3xl"
+                  icon={faCheck}
                 />
               </div>
               <div className="text-base font-medium">
@@ -89,8 +90,8 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
               <div className="p-3">
                 <FontAwesomeIcon
                   style={{ color: theme }}
-                  className="text-[#34A853]"
-                  icon={faCheckCircle}
+                  className="text-[#34A853] text-3xl"
+                  icon={faCheck}
                 />
               </div>
               <div className="text-base font-medium">
@@ -101,8 +102,8 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
               <div className="p-3">
                 <FontAwesomeIcon
                   style={{ color: theme }}
-                  className="text-[#34A853]"
-                  icon={faCheckCircle}
+                  className="text-[#34A853] text-3xl"
+                  icon={faCheck}
                 />
               </div>
               <div className="text-base font-medium">
@@ -112,7 +113,7 @@ export default function EasyDental({ openPopForm }: Record<string, any>) {
           </div>
         </div>
 
-        <div className="lg:hidden pt-5 lg:pt-0 lg:py-10">
+        <div className="lg:hidden pt-5 lg:pt-0 lg:py-10 flex justify-center">
           <button
             style={{ backgroundColor: theme }}
             onClick={() => openPopForm(true)}
