@@ -1,12 +1,12 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Video from "../../assests/implant.mp4";
+import Video from "../../assests/CID1.mp4";
 import theme from "../../constant/Constant";
 
 function MainCard({ openPopForm }: Record<string, any>) {
   return (
     <div className="w-full flex flex-col items-center gap-5 bg-white rounded-3xl  px-5 py-5  max-w-[419px]">
-      <div className="w-[263px]  sm:w-[290px] lg:w-[320px] xl:max-w-[380px] mr-[11.5%] sm:mr-[10%]">
+      <div className="w-[263px]  sm:w-[290px] lg:w-[320px] xl:max-w-[380px] ">
         <video
           autoPlay
           playsInline

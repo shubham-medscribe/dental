@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import theme from "../../constant/Constant";
-import Logo from "../../assests/logo_2.png";
+import Logo from "../../assests/New-logo.png";
 export default function Navbar({ openPopForm }: Record<string, any>) {
   return (
     <div className="w-full flex justify-center items-center py-5 shadow-lg px-5 lg:px-0">

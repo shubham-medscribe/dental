@@ -3,12 +3,23 @@ import Info from "../../constant/dentist_info";
 import theme from "../../constant/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-
+import Teeth from "../../assests/teeth.png";
 export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-[#F9FAFF] py-10">
+      <div className="max-w-screen-xl flex justify-center">
+        {/* <img src={Teeth} className="w-[500px]  h-auto" alt="single implant" /> */}
+      </div>
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
-        <div className="flex flex-col items-center justify-center w-full">
+        <div className="flex flex-col items-center  w-full">
+          <div className="w-full flex justify-center">
+           
+            <img
+              src={Teeth}
+              className="w-[70vw] max-w-[500px]  h-auto"
+              alt="single implant"
+            />
+          </div>
           <div className="">
             <h1 className="uppercase text-3xl  font-extrabold my-4 text-center lg:text-left ">
               {" "}
@@ -44,7 +55,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
               </p> */}
             </div>
 
-            <div className="bg-[#FFFBF5] w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
+            <div className="bg-white w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
                 className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit"
@@ -60,8 +71,8 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg flex flex-col lg:gap-10  lg:flex-row items-center justify-center">
-            <div className="rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg flex items-center gap-3 justify-center">
+          <div className=" rounded-lg flex flex-col lg:gap-10  lg:flex-row items-center justify-center">
+            <div className="bg-white rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
                 className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit"
