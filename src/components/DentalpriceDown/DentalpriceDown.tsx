@@ -2,7 +2,7 @@ import React from "react";
 import Info from "../../constant/dentist_info";
 import theme from "../../constant/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
   return (
@@ -32,11 +32,11 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             <div className="bg-white w-full rounded-lg p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
-                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+                className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit "
               >
-                <FontAwesomeIcon icon={faCheckCircle} />
+                <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+              <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
                 Implant Consultation
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -47,11 +47,11 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             <div className="bg-[#FFFBF5] w-full rounded-lg  p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
-                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+                className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit"
               >
-                <FontAwesomeIcon icon={faCheckCircle} />
+                <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+              <h2 className="font-extrabold  text-3xl  text-center lg:text-left w-full">
                 Cone-Beam CT Scan
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -64,11 +64,11 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             <div className="rounded-lg w-full p-5 lg:w-[301px] lg:h-[240px]  lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
-                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+                className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit"
               >
-                <FontAwesomeIcon icon={faCheckCircle} />
+                <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+              <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
                 Implant
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -79,11 +79,11 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             <div className="bg-white w-full rounded-lg p-5 lg:w-[301px] lg:h-[240px] lg:shadow-lg flex items-center gap-3 justify-center">
               <h2
                 style={{ color: theme }}
-                className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+                className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit"
               >
-                <FontAwesomeIcon icon={faCheckCircle} />
+                <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+              <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
                 Stock Abutment
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -95,17 +95,17 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
           <div className="bg-white py-8 w-full p-5 lg:shadow-lg flex items-center  gap-3 rounded-lg space-y-1">
             <h2
               style={{ color: theme }}
-              className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left w-fit"
+              className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left w-fit"
             >
-              <FontAwesomeIcon icon={faCheckCircle} />
+              <FontAwesomeIcon icon={faCheck} />
             </h2>
             {/* <h2
               style={{ color: theme }}
-              className="text-[#FEAC33] font-bold text-xl  text-center lg:text-left"
+              className="text-[#FEAC33] font-bold text-3xl  text-center lg:text-left"
             >
               $2,495
             </h2> */}
-            <h2 className=" font-bold text-3xl  text-center lg:text-left w-full">
+            <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
               Digitally Designed Implant Zirconia Crown
             </h2>
             {/* <p className="text-center lg:text-left font-medium py-1">
@@ -116,8 +116,8 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
 
           <div className=" w-full px-5  flex flex-col items-center  rounded-lg ">
             <p className="text-center text-sm lg:text-left font-medium py-1">
-              *Pricing may vary if you need additional procedures and start above
-              the pricing also mention in the banner section as well.
+              *Pricing may vary if you need additional procedures and start
+              above the pricing also mention in the banner section as well.
             </p>
           </div>
         </div>
@@ -125,12 +125,13 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
 
       {/*  Dentist showCase */}
       <div className="w-full flex flex-col  justify-center max-w-screen-xl pt-10">
-        <div className="uppercase  font-bold py-2 text-xl lg:text-3xl text-center">
+        <div className="flex justify-center gap-3 uppercase font-bold py-2 text-xl lg:text-3xl ">
           <h1>{"😊"}</h1>
+          <div className="uppercase  font-extrabold text-xl lg:text-3xl ">
+            <h1>Meet the Dentists</h1>
+          </div>
         </div>
-        <div className="uppercase  font-extrabold text-xl lg:text-3xl text-center">
-          <h1>Meet the Dentists</h1>
-        </div>
+
         {Info.dentist.map((key, i) => (
           <React.Fragment key={i}>
             <div className="flex flex-col lg:flex-row w-full justify-center lg:gap-10 mt-8">
