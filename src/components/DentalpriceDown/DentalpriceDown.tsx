@@ -16,7 +16,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
            
             <img
               src={Teeth}
-              className="w-[70vw] max-w-[500px]  h-auto"
+              className="w-[70vw] lg:w-[28vw] xl:w-[500px]   h-auto"
               alt="single implant"
             />
           </div>
@@ -47,7 +47,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
               >
                 <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
+              <h2 className=" font-extrabold text-2xl sm:text-3xl     text-center lg:text-left w-full">
                 Implant Consultation
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -62,7 +62,8 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
               >
                 <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className="font-extrabold  text-3xl  text-center lg:text-left w-full">
+              <h2 className="font-extrabold  text-2xl sm:text-3xl     text-center lg:text-left w-full">
+
                 Cone-Beam CT Scan
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -79,7 +80,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
               >
                 <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
+              <h2 className=" font-extrabold text-2xl sm:text-3xl    text-center lg:text-left w-full">
                 Implant
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -94,7 +95,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
               >
                 <FontAwesomeIcon icon={faCheck} />
               </h2>
-              <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
+              <h2 className=" font-extrabold text-2xl sm:text-3xl    text-center lg:text-left w-full">
                 Stock Abutment
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -116,7 +117,7 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
             >
               $2,495
             </h2> */}
-            <h2 className=" font-extrabold text-3xl  text-center lg:text-left w-full">
+            <h2 className=" font-extrabold text-2xl sm:text-3xl    text-center lg:text-left w-full">
               Digitally Designed Implant Zirconia Crown
             </h2>
             {/* <p className="text-center lg:text-left font-medium py-1">
