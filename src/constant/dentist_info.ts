@@ -6,7 +6,7 @@ const dentists = {
       name: "Dr. Arpana Gupta",
       position: "DDS, MDS, Implant Surgeon",
       img: DrArpitaGupta,
-      profession: "Dentist",
+      profession: "",
       information: [
         "Dr. Arpana Gupta has 25 years of experience practicing dentistry. She began her career in India, where she spent two years as a professor and head of the Endodontics Department at Subharti Dental College. She has helped hundreds of patients in her practices in California and Massachusetts.",
         "In 2001, she and Dr. Jain founded a federally funded dental clinic in Franklin County, a remote, underserved area of Massachusetts. At the time, she and Dr. Jain were the only dentists in the county treating uninsured and low-income patients. She was presented with the Health Leadership Award by the county in honor of her work and dedication toward caring for the underprivileged population.",
