@@ -72,8 +72,8 @@ export default function ReviewSlider() {
           }}
           className="rounded-lg shadow-lg space-x-2"
         >
-          {reviews.map((review) => (
-            <SwiperSlide>
+          {reviews.map((review,index:number) => (
+            <SwiperSlide key={index}>
               <Card
                 name={review.name}
                 review={review.review}
