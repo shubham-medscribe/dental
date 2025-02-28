@@ -31,7 +31,7 @@ export default function Footer({ openPopForm }: Record<string, any>) {
       });
       const dayIndex = new Date(today).getDay();
 
-      console.log("Today's date:", new Date(today).getDate()); // Debugging
+      //console.log("Today's date:", new Date(today).getDate()); // Debugging
 
       return dayIndex === 0 ? 6 : dayIndex - 1; // Sunday (0) becomes 6, others shift back by 1
     };

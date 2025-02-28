@@ -13,7 +13,6 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
       <div className="w-full p-5 flex flex-col lg:flex-row max-w-screen-xl">
         <div className="flex flex-col items-center  w-full">
           <div className="w-full flex justify-center">
-           
             <img
               src={Teeth}
               className="w-[70vw] lg:w-[28vw] xl:w-[500px]   h-auto"
@@ -63,7 +62,6 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
                 <FontAwesomeIcon icon={faCheck} />
               </h2>
               <h2 className="font-extrabold  text-2xl sm:text-3xl     text-center lg:text-left w-full">
-
                 Cone-Beam CT Scan
               </h2>
               {/*  <p className="text-center font-medium py-1 lg:text-left">
@@ -183,8 +181,8 @@ export default function DentalpriceDown({ openPopForm }: Record<string, any>) {
 
               <div className="w-full h-auto flex  items-center justify-center">
                 <div className="w-fit  p-5 flex flex-col gap-5 h-full xl:text-[17px]">
-                  {key.information.map((desc: string) => {
-                    return <p>{desc}</p>;
+                  {key.information.map((desc: string, index: number) => {
+                    return <p key={index}>{desc}</p>;
                   })}
                 </div>
               </div>
