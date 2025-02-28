@@ -17,7 +17,7 @@ export default function CallUsBar() {
 
   return createPortal(
     <motion.a
-      href="tel:+1510-574-0496"
+      href="tel:+15102249455"
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 80 }}

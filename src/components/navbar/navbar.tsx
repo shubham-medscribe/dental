@@ -34,7 +34,7 @@ export default function Navbar({ openPopForm }: Record<string, any>) {
           >
             Free Consultation
           </button>
-          <a href="tel:+1510-574-0496">
+          <a href="tel:+15102249455">
             <button
               style={{ backgroundColor: theme }}
               className="md:hidden rounded-full p-3 space-x-2 text-white"
