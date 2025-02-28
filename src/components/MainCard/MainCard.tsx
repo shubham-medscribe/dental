@@ -25,8 +25,8 @@ function MainCard({ openPopForm }: Record<string, any>) {
         </div>
         <div className="flex items-center justify-center gap-2">
           <span
-            style={{ color: theme }}
-            className="text-[#153371] font-bold text-xl  lg:text-3xl"
+           /*  style={{ color: theme }} */
+            className="text-red-500 font-bold text-3xl  lg:text-4xl"
           >
             $2,495*
           </span>
