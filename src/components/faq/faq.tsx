@@ -93,7 +93,7 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
               src="https://redwoodcityimplantclinic.com/wp-content/plugins/constant-images-plugin/images/Main-Heading-Icon.png"
               alt=""
             />
-            <h2 className="font-bold text-lg">
+            <h2 className="font-bold text-xl lg:text-3xl">
               Dental Implants in Fremont, CA
             </h2>
           </div>
