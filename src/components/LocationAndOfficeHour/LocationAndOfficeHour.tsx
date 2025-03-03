@@ -44,7 +44,7 @@ export default function LocationAndOfficeHour() {
               </div>
               <div className="flex flex-col">
                 <p>Office Hours</p>
-                <p>See footer</p>
+                <p className="text-blue-700">See footer</p>
               </div>
             </div>
           </div>
@@ -58,8 +58,8 @@ export default function LocationAndOfficeHour() {
                 icon={faPhone}
               />
             </div>
-            <div className="flex items-center font-semibold">
-              <p>Call us: +1 (151) 022-4945</p>
+            <div className="flex items-center font-semibold text-2xl">
+              <p>Call Us: +1 (151) 022-4945</p>
             </div>
           </a>
         </div>

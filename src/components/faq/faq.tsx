@@ -85,9 +85,9 @@ export default function FAQ({ openPopForm }: Record<string, any>) {
 
   return (
     <div className="lg:flex justify-center bg-[#F9FAFF]">
-      <div className="lg:w-[1300px] py-10">
+      <div className="lg:w-[1300px] ">
         <div className="container p-8">
-          <div className="flex py-8 items-center gap-2">
+          <div className="flex pb-3 xl:pb-8 xl:pt-8  items-center gap-2">
             <img
               className="w-8 h-auto"
               src="https://redwoodcityimplantclinic.com/wp-content/plugins/constant-images-plugin/images/Main-Heading-Icon.png"

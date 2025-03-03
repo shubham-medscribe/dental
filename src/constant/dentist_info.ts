@@ -26,10 +26,10 @@ const dentists = {
       ],
     },
     {
-      name: "Andy",
-      position: "Lab Assistant",
+      name: "",
+      position: "Andy",
       img: Andy,
-      profession: "Lab Assistant",
+      profession: "",
       information: [
         "With a background in mechanical engineering and a family legacy in dentistry, Andy combines technical expertise with a passion for precision in designing and fabricating dental prosthetics. His work focuses on restoring smiles and boosting confidence, enhancing patients’ quality of life. Andy enjoys traveling, fine cuisine, and live music outside of work, drawing inspiration from diverse cultures and experiences.",
       ],
