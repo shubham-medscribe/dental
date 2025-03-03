@@ -26,8 +26,8 @@ const dentists = {
       ],
     },
     {
-      name: "",
-      position: "Andy",
+      name: "Andy",
+      position: "Lab Assistant",
       img: Andy,
       profession: "",
       information: [
