@@ -27,7 +27,7 @@ const dentists = {
     },
     {
       name: "Andy",
-      position: "Lab Assistant",
+      position: "Lab Engineer",
       img: Andy,
       profession: "",
       information: [
